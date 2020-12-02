@@ -89,7 +89,75 @@ document.getElementsByName("hw4")[4].disabled = false;
 document.getElementsByName("hw4")[5].disabled = false;
 }
 
-}
+document.getElementsByClassName("cl")[0].innerHTML = localStorage.getItem("1a");
+document.getElementsByClassName("cl")[1].innerHTML = localStorage.getItem("2a");
+document.getElementsByClassName("cl")[2].innerHTML = localStorage.getItem("3a");
+document.getElementsByClassName("cl")[3].innerHTML = localStorage.getItem("4a");
+document.getElementsByClassName("cl")[4].innerHTML = localStorage.getItem("5a");
+document.getElementsByClassName("cl")[5].innerHTML = localStorage.getItem("6a");
+document.getElementsByClassName("cl")[6].innerHTML = localStorage.getItem("7a");
+document.getElementsByClassName("cl")[7].innerHTML = localStorage.getItem("8a");
+document.getElementsByClassName("cl")[8].innerHTML = localStorage.getItem("9a");
+document.getElementsByClassName("cl")[9].innerHTML = localStorage.getItem("10a");
+document.getElementsByClassName("cl")[10].innerHTML = localStorage.getItem("11a");
+document.getElementsByClassName("cl")[11].innerHTML = localStorage.getItem("12a");
+document.getElementsByClassName("cl")[12].innerHTML = localStorage.getItem("13a");
+document.getElementsByClassName("cl")[13].innerHTML = localStorage.getItem("14a");
+document.getElementsByClassName("cl")[14].innerHTML = localStorage.getItem("15a");
+document.getElementsByClassName("cl")[15].innerHTML = localStorage.getItem("16a");
+
+document.getElementsByClassName("cl")[0].setAttribute("href", localStorage.getItem("1b"));
+document.getElementsByClassName("cl")[1].setAttribute("href", localStorage.getItem("2b"));
+document.getElementsByClassName("cl")[2].setAttribute("href", localStorage.getItem("3b"));
+document.getElementsByClassName("cl")[3].setAttribute("href", localStorage.getItem("4b"));
+document.getElementsByClassName("cl")[4].setAttribute("href", localStorage.getItem("5b"));
+document.getElementsByClassName("cl")[5].setAttribute("href", localStorage.getItem("6b"));
+document.getElementsByClassName("cl")[6].setAttribute("href", localStorage.getItem("7b"));
+document.getElementsByClassName("cl")[7].setAttribute("href", localStorage.getItem("8b"));
+document.getElementsByClassName("cl")[8].setAttribute("href", localStorage.getItem("9b"));
+document.getElementsByClassName("cl")[9].setAttribute("href", localStorage.getItem("10b"));
+document.getElementsByClassName("cl")[10].setAttribute("href", localStorage.getItem("11b"));
+document.getElementsByClassName("cl")[11].setAttribute("href", localStorage.getItem("12b"));
+document.getElementsByClassName("cl")[12].setAttribute("href", localStorage.getItem("13b"));
+document.getElementsByClassName("cl")[13].setAttribute("href", localStorage.getItem("14b"));
+document.getElementsByClassName("cl")[14].setAttribute("href", localStorage.getItem("15b"));
+document.getElementsByClassName("cl")[15].setAttribute("href", localStorage.getItem("16b"));
+////
+document.getElementsByName("hw")[0].value = localStorage.getItem("1c");
+document.getElementsByName("hw")[1].value = localStorage.getItem("2c");
+document.getElementsByName("hw")[2].value = localStorage.getItem("3c");
+document.getElementsByName("hw")[3].value = localStorage.getItem("4c");
+document.getElementsByName("hw")[4].value = localStorage.getItem("5c");
+document.getElementsByName("hw")[5].value = localStorage.getItem("6c");
+
+document.getElementsByName("hw1")[0].value = localStorage.getItem("7c");
+document.getElementsByName("hw1")[1].value = localStorage.getItem("8c");
+document.getElementsByName("hw1")[2].value = localStorage.getItem("9c");
+document.getElementsByName("hw1")[3].value = localStorage.getItem("10c");
+document.getElementsByName("hw1")[4].value = localStorage.getItem("11c");
+document.getElementsByName("hw1")[5].value = localStorage.getItem("12c");
+
+document.getElementsByName("hw2")[0].value = localStorage.getItem("13c");
+document.getElementsByName("hw2")[1].value = localStorage.getItem("14c");
+document.getElementsByName("hw2")[2].value = localStorage.getItem("15c");
+document.getElementsByName("hw2")[3].value = localStorage.getItem("16c");
+document.getElementsByName("hw2")[4].value = localStorage.getItem("17c");
+document.getElementsByName("hw2")[5].value = localStorage.getItem("18c");
+
+document.getElementsByName("hw3")[0].value = localStorage.getItem("19c");
+document.getElementsByName("hw3")[1].value = localStorage.getItem("20c");
+document.getElementsByName("hw3")[2].value = localStorage.getItem("21c");
+document.getElementsByName("hw3")[3].value = localStorage.getItem("22c");
+document.getElementsByName("hw3")[4].value = localStorage.getItem("23c");
+document.getElementsByName("hw3")[5].value = localStorage.getItem("24c");
+
+document.getElementsByName("hw4")[0].value = localStorage.getItem("25c");
+document.getElementsByName("hw4")[1].value = localStorage.getItem("26c");
+document.getElementsByName("hw4")[2].value = localStorage.getItem("27c");
+document.getElementsByName("hw4")[3].value = localStorage.getItem("28c");
+document.getElementsByName("hw4")[4].value = localStorage.getItem("29c");
+document.getElementsByName("hw4")[5].value = localStorage.getItem("30c");
+};
 </script>
 
 </head>
@@ -99,39 +167,200 @@ document.getElementsByName("hw4")[5].disabled = false;
 <header>
 <h1 Style="font-size:300%;color:white">Welcome to The Virtual School</h1>
 
-<p Style="font-size:140%;">By Debesh Biswas<br>For Class - XA</p>
+<p Style="font-size:140%;">By DebStar17</p>
 
-<h1 style="font-size:200%">Term 2 Classroom Links</h1>
+<h1 style="font-size:200%">Classroom Links</h1>
+<button id="btna" type="button" style="font-size:150%" onclick="set_cl()">Set ClassRoom Links</button><br><br>
 
+<script>
+function set_cl() {
+
+if (document.getElementsByClassName("div")[0].hidden == true) {
+document.getElementsByClassName("div")[0].hidden = false;
+alert("Do you want to set the ClassRoom Links?");
+
+document.getElementsByClassName("url")[0].value = localStorage.getItem("1a");
+document.getElementsByClassName("url")[1].value = localStorage.getItem("2a");
+document.getElementsByClassName("url")[2].value = localStorage.getItem("3a");
+document.getElementsByClassName("url")[3].value = localStorage.getItem("4a");
+document.getElementsByClassName("url")[4].value = localStorage.getItem("5a");
+document.getElementsByClassName("url")[5].value = localStorage.getItem("6a");
+document.getElementsByClassName("url")[6].value = localStorage.getItem("7a");
+document.getElementsByClassName("url")[7].value = localStorage.getItem("8a");
+document.getElementsByClassName("url")[8].value = localStorage.getItem("9a");
+document.getElementsByClassName("url")[9].value = localStorage.getItem("10a");
+document.getElementsByClassName("url")[10].value = localStorage.getItem("11a");
+document.getElementsByClassName("url")[11].value = localStorage.getItem("12a");
+document.getElementsByClassName("url")[12].value = localStorage.getItem("13a");
+document.getElementsByClassName("url")[13].value = localStorage.getItem("14a");
+document.getElementsByClassName("url")[14].value = localStorage.getItem("15a");
+document.getElementsByClassName("url")[15].value = localStorage.getItem("16a");
+
+document.getElementsByClassName("cname")[0].value = localStorage.getItem("1b");
+document.getElementsByClassName("cname")[1].value = localStorage.getItem("2b");
+document.getElementsByClassName("cname")[2].value = localStorage.getItem("3b");
+document.getElementsByClassName("cname")[3].value = localStorage.getItem("4b");
+document.getElementsByClassName("cname")[4].value = localStorage.getItem("5b");
+document.getElementsByClassName("cname")[5].value = localStorage.getItem("6b");
+document.getElementsByClassName("cname")[6].value = localStorage.getItem("7b");
+document.getElementsByClassName("cname")[7].value = localStorage.getItem("8b");
+document.getElementsByClassName("cname")[8].value = localStorage.getItem("9b");
+document.getElementsByClassName("cname")[9].value = localStorage.getItem("10b");
+document.getElementsByClassName("cname")[10].value = localStorage.getItem("11b");
+document.getElementsByClassName("cname")[11].value = localStorage.getItem("12b");
+document.getElementsByClassName("cname")[12].value = localStorage.getItem("13b");
+document.getElementsByClassName("cname")[13].value = localStorage.getItem("14b");
+document.getElementsByClassName("cname")[14].value = localStorage.getItem("15b");
+document.getElementsByClassName("cname")[15].value = localStorage.getItem("16b");
+} else {
+
+document.getElementsByClassName("div")[0].hidden = true;
+}
+};
+</script>
+
+<script>
+function Done() {
+
+localStorage.setItem("1a", document.getElementsByClassName("url")[0].value);
+localStorage.setItem("2a", document.getElementsByClassName("url")[1].value);
+localStorage.setItem("3a", document.getElementsByClassName("url")[2].value);
+localStorage.setItem("4a", document.getElementsByClassName("url")[3].value);
+localStorage.setItem("5a", document.getElementsByClassName("url")[4].value);
+localStorage.setItem("6a", document.getElementsByClassName("url")[5].value);
+localStorage.setItem("7a", document.getElementsByClassName("url")[6].value);
+localStorage.setItem("8a", document.getElementsByClassName("url")[7].value);
+localStorage.setItem("9a", document.getElementsByClassName("url")[8].value);
+localStorage.setItem("10a", document.getElementsByClassName("url")[9].value);
+localStorage.setItem("11a", document.getElementsByClassName("url")[10].value);
+localStorage.setItem("12a", document.getElementsByClassName("url")[11].value);
+localStorage.setItem("13a", document.getElementsByClassName("url")[12].value);
+localStorage.setItem("14a", document.getElementsByClassName("url")[13].value);
+localStorage.setItem("15a", document.getElementsByClassName("url")[14].value);
+localStorage.setItem("16a", document.getElementsByClassName("url")[15].value);
+
+localStorage.setItem("1b", document.getElementsByClassName("cname")[0].value);
+localStorage.setItem("2b", document.getElementsByClassName("cname")[1].value);
+localStorage.setItem("3b", document.getElementsByClassName("cname")[2].value);
+localStorage.setItem("4b", document.getElementsByClassName("cname")[3].value);
+localStorage.setItem("4b", document.getElementsByClassName("cname")[4].value);
+localStorage.setItem("6b", document.getElementsByClassName("cname")[5].value);
+localStorage.setItem("7b", document.getElementsByClassName("cname")[6].value);
+localStorage.setItem("8b", document.getElementsByClassName("cname")[7].value);
+localStorage.setItem("9b", document.getElementsByClassName("cname")[8].value);
+localStorage.setItem("10b", document.getElementsByClassName("cname")[9].value);
+localStorage.setItem("11b", document.getElementsByClassName("cname")[10].value);
+localStorage.setItem("12b", document.getElementsByClassName("cname")[11].value);
+localStorage.setItem("13b", document.getElementsByClassName("cname")[12].value);
+localStorage.setItem("14b", document.getElementsByClassName("cname")[13].value);
+localStorage.setItem("15b", document.getElementsByClassName("cname")[14].value);
+localStorage.setItem("16b", document.getElementsByClassName("cname")[15].value);
+
+
+document.getElementsByClassName("cl")[0].innerHTML = localStorage.getItem("1a");
+document.getElementsByClassName("cl")[1].innerHTML = localStorage.getItem("2a");
+document.getElementsByClassName("cl")[2].innerHTML = localStorage.getItem("3a");
+document.getElementsByClassName("cl")[3].innerHTML = localStorage.getItem("4a");
+document.getElementsByClassName("cl")[4].innerHTML = localStorage.getItem("5a");
+document.getElementsByClassName("cl")[5].innerHTML = localStorage.getItem("6a");
+document.getElementsByClassName("cl")[6].innerHTML = localStorage.getItem("7a");
+document.getElementsByClassName("cl")[7].innerHTML = localStorage.getItem("8a");
+document.getElementsByClassName("cl")[8].innerHTML = localStorage.getItem("9a");
+document.getElementsByClassName("cl")[9].innerHTML = localStorage.getItem("10a");
+document.getElementsByClassName("cl")[10].innerHTML = localStorage.getItem("11a");
+document.getElementsByClassName("cl")[11].innerHTML = localStorage.getItem("12a");
+document.getElementsByClassName("cl")[12].innerHTML = localStorage.getItem("13a");
+document.getElementsByClassName("cl")[13].innerHTML = localStorage.getItem("14a");
+document.getElementsByClassName("cl")[14].innerHTML = localStorage.getItem("15a");
+document.getElementsByClassName("cl")[15].innerHTML = localStorage.getItem("16a");
+
+document.getElementsByClassName("cl")[0].setAttribute("href", localStorage.getItem("1b"));
+document.getElementsByClassName("cl")[1].setAttribute("href", localStorage.getItem("2b"));
+document.getElementsByClassName("cl")[2].setAttribute("href", localStorage.getItem("3b"));
+document.getElementsByClassName("cl")[3].setAttribute("href", localStorage.getItem("4b"));
+document.getElementsByClassName("cl")[4].setAttribute("href", localStorage.getItem("5b"));
+document.getElementsByClassName("cl")[5].setAttribute("href", localStorage.getItem("6b"));
+document.getElementsByClassName("cl")[6].setAttribute("href", localStorage.getItem("7b"));
+document.getElementsByClassName("cl")[7].setAttribute("href", localStorage.getItem("8b"));
+document.getElementsByClassName("cl")[8].setAttribute("href", localStorage.getItem("9b"));
+document.getElementsByClassName("cl")[9].setAttribute("href", localStorage.getItem("10b"));
+document.getElementsByClassName("cl")[10].setAttribute("href", localStorage.getItem("11b"));
+document.getElementsByClassName("cl")[11].setAttribute("href", localStorage.getItem("12b"));
+document.getElementsByClassName("cl")[12].setAttribute("href", localStorage.getItem("13b"));
+document.getElementsByClassName("cl")[13].setAttribute("href", localStorage.getItem("14b"));
+document.getElementsByClassName("cl")[14].setAttribute("href", localStorage.getItem("15b"));
+document.getElementsByClassName("cl")[15].setAttribute("href", localStorage.getItem("16b"));
+
+document.getElementsByClassName("div")[0].hidden = true;
+}
+</script>
+
+<div class="div" hidden>
+<h1>Enter the Name of Classroom and Link in the blanks...<br></h1>
+
+<table>
+
+<tr>
+<th>Class Name</th>
+<th>Class Link (Url on the Address bar)</th>
+</tr>
+
+<tr><td class="col1"><input type="url" class="url"></td> <td><input type="text" class="cname" size="135"></td></tr>
+<tr><td class="col1"><input type="url" class="url"></td> <td><input type="text" class="cname" size="135"></td></tr>
+<tr><td class="col1"><input type="url" class="url"></td> <td><input type="text" class="cname" size="135"></td></tr>
+<tr><td class="col1"><input type="url" class="url"></td> <td><input type="text" class="cname" size="135"></td></tr>
+<tr><td class="col1"><input type="url" class="url"></td> <td><input type="text" class="cname" size="135"></td></tr>
+<tr><td class="col1"><input type="url" class="url"></td> <td><input type="text" class="cname" size="135"></td></tr>
+<tr><td class="col1"><input type="url" class="url"></td> <td><input type="text" class="cname" size="135"></td></tr>
+<tr><td class="col1"><input type="url" class="url"></td> <td><input type="text" class="cname" size="135"></td></tr>
+<tr><td class="col1"><input type="url" class="url"></td> <td><input type="text" class="cname" size="135"></td></tr>
+<tr><td class="col1"><input type="url" class="url"></td> <td><input type="text" class="cname" size="135"></td></tr>
+<tr><td class="col1"><input type="url" class="url"></td> <td><input type="text" class="cname" size="135"></td></tr>
+<tr><td class="col1"><input type="url" class="url"></td> <td><input type="text" class="cname" size="135"></td></tr>
+<tr><td class="col1"><input type="url" class="url"></td> <td><input type="text" class="cname" size="135"></td></tr>
+<tr><td class="col1"><input type="url" class="url"></td> <td><input type="text" class="cname" size="135"></td></tr>
+<tr><td class="col1"><input type="url" class="url"></td> <td><input type="text" class="cname" size="135"></td></tr>
+<tr><td class="col1"><input type="url" class="url"></td> <td><input type="text" class="cname" size="135"></td></tr>
+</table>
+<br>
+
+<center>
+<button onclick="Done()" style="font-size:200%">Done</button>
+<br>
+**********************
+</center>
+<br><br>
+
+</div>
 <table>
 <tr>
 
-<th><a href="https://classroom.google.com/u/2/w/NjYwNjg3OTkyNjla/t/all" target="_blank">Class XA|ClassWork</a></th>
-<th><a href="https://classroom.google.com/u/2/c/NjYwNjg3OTkyNjla" target="_blank">Class XA|Stream</a></th>
+<th><a class="cl" target="_blank"></a></th>
+<th><a class="cl" target="_blank"></a></th>
 </tr>
 </table>
 
 <table>
 <tr>
-<th><a href="https://classroom.google.com/u/2/w/NjYwNjg3OTkyNjla/tc/MTk3ODEyNzY5NDY4" target="_blank">Hist/DP	</a></th>
-<th><a href="https://classroom.google.com/u/2/w/NjYwNjg3OTkyNjla/tc/MTM5NTkyOTc4OTgy" target="_blank">Bio2	</a></th>
-<th><a href="https://classroom.google.com/u/2/w/NjYwNjg3OTkyNjla/tc/MTQzNTUwMDkxMDgx" target="_blank">P. Art	</a></th>
-<th><a href="https://classroom.google.com/u/2/w/NjYwNjg3OTkyNjla/tc/MTE1NjQ2NzQxOTcw" target="_blank">Sports	</a></th>
-<th><a href="https://classroom.google.com/u/2/w/NjYwNjg3OTkyNjla/tc/MTE1NTQ3MTMwODA1" target="_blank">Sanskrit2	</a></th>
-<th><a href="https://classroom.google.com/u/2/w/NjYwNjg3OTkyNjla/tc/NjYwOTc2NTA3NzBa" target="_blank">Maths	</a></th>
-<th><a href="https://classroom.google.com/u/2/w/NjYwNjg3OTkyNjla/tc/NjYwOTc2NTA3NTZa" target="_blank">FMM	</a></th>
+<th><a class="cl" target="_blank"></a></th>
+<th><a class="cl" target="_blank"></a></th>
+<th><a class="cl" target="_blank"></a></th>
+<th><a class="cl" target="_blank"></a></th>
+<th><a class="cl" target="_blank"></a></th>
+<th><a class="cl" target="_blank"></a></th>
+<th><a class="cl" target="_blank"></a></th>
 </tr>
 </table>
 
 <table>
 <tr>
-<th><a href="https://classroom.google.com/u/2/w/NjYwNjg3OTkyNjla/tc/NjYwOTc2NTA3NTJa" target="_blank">Geo	</a></th>
-<th><a href="https://classroom.google.com/u/2/w/NjYwNjg3OTkyNjla/tc/NjYwOTA4MzE4MTVa" target="_blank">Eco	</a></th>
-<th><a href="https://classroom.google.com/u/2/w/NjYwNjg3OTkyNjla/tc/NjYwOTA4MzE4MDha" target="_blank">Eng	</a></th>
-<th><a href="https://classroom.google.com/u/2/w/NjYwNjg3OTkyNjla/tc/NjYwOTA4MzE3ODda" target="_blank">Sanskrit1	</a></th>
-<th><a href="https://classroom.google.com/u/2/w/NjYwNjg3OTkyNjla/tc/NjYwOTA4MzE3NzBa" target="_blank">Bio1	</a></th>
-<th><a href="https://classroom.google.com/u/2/w/NjYwNjg3OTkyNjla/tc/NjYwOTA4MzE3NjVa" target="_blank">Phy	</a></th>
-<th><a href="https://classroom.google.com/u/2/w/NjYwNjg3OTkyNjla/tc/NjYwOTA4MzE3NTha" target="_blank">Chem	</a></th>
+<th><a class="cl" target="_blank"></a></th>
+<th><a class="cl" target="_blank"></a></th>
+<th><a class="cl" target="_blank"></a></th>
+<th><a class="cl" target="_blank"></a></th>
+<th><a class="cl" target="_blank"></a></th>
+<th><a class="cl" target="_blank"></a></th>
+<th><a class="cl" target="_blank"></a></th>
 </tr>
 </table>
 
@@ -140,8 +369,8 @@ document.getElementsByName("hw4")[5].disabled = false;
 
 <center>
 
-<button id="btn1" type="button" style="font-size:150%" onclick="myFunction()">Activate School</button> 
-<button id="btn3" type="button" style="font-size:150%" onclick="a()">WhatsApp</button> <br>
+<button id="btn1" type="button" style="font-size:250%" onclick="myFunction()">Activate School</button> 
+<button id="btn3" type="button" style="font-size:250%" onclick="a()">WhatsApp</button> <br>
 
 <script>
 function a() {
@@ -152,8 +381,136 @@ open("https://web.whatsapp.com/")
 <h1>TimeTable + Hw pane</h1>
 
 </center>
+<button id="btna" type="button" style="font-size:150%" onclick="set_tt()">Set TimeTable</button>
+<button id="btnb" type="button" style="font-size:150%" onclick="hide()" hidden>Done/Hide</button><br><br>
 
-<br>
+<script>
+function set_tt() {
+alert("Do you want to format the TimeTable?");
+document.getElementById("btnb").hidden = false;
+document.getElementById("btn").hidden = true;
+document.getElementById("btn2").hidden = true;
+
+document.getElementsByName("hw")[0].disabled = false;
+document.getElementsByName("hw")[1].disabled = false;
+document.getElementsByName("hw")[2].disabled = false;
+document.getElementsByName("hw")[3].disabled = false;
+document.getElementsByName("hw")[4].disabled = false;
+document.getElementsByName("hw")[5].disabled = false;
+
+document.getElementsByName("hw1")[0].disabled = false;
+document.getElementsByName("hw1")[1].disabled = false;
+document.getElementsByName("hw1")[2].disabled = false;
+document.getElementsByName("hw1")[3].disabled = false;
+document.getElementsByName("hw1")[4].disabled = false;
+document.getElementsByName("hw1")[5].disabled = false;
+
+document.getElementsByName("hw2")[0].disabled = false;
+document.getElementsByName("hw2")[1].disabled = false;
+document.getElementsByName("hw2")[2].disabled = false;
+document.getElementsByName("hw2")[3].disabled = false;
+document.getElementsByName("hw2")[4].disabled = false;
+document.getElementsByName("hw2")[5].disabled = false;
+
+document.getElementsByName("hw3")[0].disabled = false;
+document.getElementsByName("hw3")[1].disabled = false;
+document.getElementsByName("hw3")[2].disabled = false;
+document.getElementsByName("hw3")[3].disabled = false;
+document.getElementsByName("hw3")[4].disabled = false;
+document.getElementsByName("hw3")[5].disabled = false;
+
+document.getElementsByName("hw4")[0].disabled = false;
+document.getElementsByName("hw4")[1].disabled = false;
+document.getElementsByName("hw4")[2].disabled = false;
+document.getElementsByName("hw4")[3].disabled = false;
+document.getElementsByName("hw4")[4].disabled = false;
+document.getElementsByName("hw4")[5].disabled = false;
+
+};
+</script>
+
+<script>
+function hide() {
+
+document.getElementById("btnb").hidden = true;
+document.getElementById("btn").hidden = false;
+document.getElementById("btn2").hidden = false;
+
+document.getElementsByName("hw")[0].disabled = true;
+document.getElementsByName("hw")[1].disabled = true;
+document.getElementsByName("hw")[2].disabled = true;
+document.getElementsByName("hw")[3].disabled = true;
+document.getElementsByName("hw")[4].disabled = true;
+document.getElementsByName("hw")[5].disabled = true;
+
+document.getElementsByName("hw1")[0].disabled = true;
+document.getElementsByName("hw1")[1].disabled = true;
+document.getElementsByName("hw1")[2].disabled = true;
+document.getElementsByName("hw1")[3].disabled = true;
+document.getElementsByName("hw1")[4].disabled = true;
+document.getElementsByName("hw1")[5].disabled = true;
+
+document.getElementsByName("hw2")[0].disabled = true;
+document.getElementsByName("hw2")[1].disabled = true;
+document.getElementsByName("hw2")[2].disabled = true;
+document.getElementsByName("hw2")[3].disabled = true;
+document.getElementsByName("hw2")[4].disabled = true;
+document.getElementsByName("hw2")[5].disabled = true;
+
+document.getElementsByName("hw3")[0].disabled = true;
+document.getElementsByName("hw3")[1].disabled = true;
+document.getElementsByName("hw3")[2].disabled = true;
+document.getElementsByName("hw3")[3].disabled = true;
+document.getElementsByName("hw3")[4].disabled = true;
+document.getElementsByName("hw3")[5].disabled = true;
+
+document.getElementsByName("hw4")[0].disabled = true;
+document.getElementsByName("hw4")[1].disabled = true;
+document.getElementsByName("hw4")[2].disabled = true;
+document.getElementsByName("hw4")[3].disabled = true;
+document.getElementsByName("hw4")[4].disabled = true;
+document.getElementsByName("hw4")[5].disabled = true;
+////
+////
+////
+////
+////
+localStorage.setItem("1c", document.getElementsByName("hw")[0].value);
+localStorage.setItem("2c", document.getElementsByName("hw")[1].value);
+localStorage.setItem("3c", document.getElementsByName("hw")[2].value);
+localStorage.setItem("4c", document.getElementsByName("hw")[3].value);
+localStorage.setItem("5c", document.getElementsByName("hw")[4].value);
+localStorage.setItem("6c", document.getElementsByName("hw")[5].value);
+
+localStorage.setItem("7c", document.getElementsByName("hw1")[0].value);
+localStorage.setItem("8c", document.getElementsByName("hw1")[1].value);
+localStorage.setItem("9c", document.getElementsByName("hw1")[2].value);
+localStorage.setItem("10c", document.getElementsByName("hw1")[3].value);
+localStorage.setItem("11c", document.getElementsByName("hw1")[4].value);
+localStorage.setItem("12c", document.getElementsByName("hw1")[5].value);
+
+localStorage.setItem("13c", document.getElementsByName("hw2")[0].value);
+localStorage.setItem("14c", document.getElementsByName("hw2")[1].value);
+localStorage.setItem("15c", document.getElementsByName("hw2")[2].value);
+localStorage.setItem("16c", document.getElementsByName("hw2")[3].value);
+localStorage.setItem("17c", document.getElementsByName("hw2")[4].value);
+localStorage.setItem("18c", document.getElementsByName("hw2")[5].value);
+
+localStorage.setItem("19c", document.getElementsByName("hw3")[0].value);
+localStorage.setItem("20c", document.getElementsByName("hw3")[1].value);
+localStorage.setItem("21c", document.getElementsByName("hw3")[2].value);
+localStorage.setItem("22c", document.getElementsByName("hw3")[3].value);
+localStorage.setItem("23c", document.getElementsByName("hw3")[4].value);
+localStorage.setItem("24c", document.getElementsByName("hw3")[5].value);
+
+localStorage.setItem("25c", document.getElementsByName("hw4")[0].value);
+localStorage.setItem("26c", document.getElementsByName("hw4")[1].value);
+localStorage.setItem("27c", document.getElementsByName("hw4")[2].value);
+localStorage.setItem("28c", document.getElementsByName("hw4")[3].value);
+localStorage.setItem("29c", document.getElementsByName("hw4")[4].value);
+localStorage.setItem("30c", document.getElementsByName("hw4")[5].value);
+};
+</script>
 
 <table>
 <tr>
@@ -165,36 +522,37 @@ open("https://web.whatsapp.com/")
 <th>FRIDAY</th>
 
 </tr>
-
 <tr>
 
+<div class="div2">
+
 <td>
 <form>
-<textarea name="hw" rows="2"cols="30" style="text-align:center" disabled>***CT***</textarea>
+<textarea name="hw" rows="2"cols="30" style="text-align:center" disabled></textarea>
 </form>
 </td>
 
 <td>
 <form>
-<textarea name="hw1" rows="2"cols="30" style="text-align:center"  disabled>***Sci***</textarea>
+<textarea name="hw1" rows="2"cols="30" style="text-align:center"  disabled></textarea>
 </form>
 </td>
 
 <td>
 <form>
-<textarea name="hw2" rows="2"cols="30" style="text-align:center" disabled>***CT***</textarea>
+<textarea name="hw2" rows="2"cols="30" style="text-align:center" disabled></textarea>
 </form>
 </td>
 
 <td>
 <form>
-<textarea name="hw3" rows="2"cols="30" style="text-align:center" disabled>***Sci***</textarea>
+<textarea name="hw3" rows="2"cols="30" style="text-align:center" disabled></textarea>
 </form>
 </td>
 
 <td>
 <form>
-<textarea name="hw4" rows="2"cols="26" style="text-align:center" disabled>***Hindi***</textarea>
+<textarea name="hw4" rows="2"cols="26" style="text-align:center" disabled></textarea>
 </form>
 </td>
 
@@ -206,31 +564,31 @@ open("https://web.whatsapp.com/")
 
 <td>
 <form>
-<textarea name="hw" rows="2"cols="30" style="text-align:center" disabled>***F/Skt***</textarea>
+<textarea name="hw" rows="2"cols="30" style="text-align:center" disabled></textarea>
 </form>
 </td>
 
 <td>
 <form>
-<textarea name="hw1" rows="2"cols="30" style="text-align:center"  disabled>***Y/T***</textarea>
+<textarea name="hw1" rows="2"cols="30" style="text-align:center"  disabled></textarea>
 </form>
 </td>
 
 <td>
 <form>
-<textarea name="hw2" rows="2"cols="30" style="text-align:center" disabled>***Hindi***</textarea>
+<textarea name="hw2" rows="2"cols="30" style="text-align:center" disabled></textarea>
 </form>
 </td>
 
 <td>
 <form>
-<textarea name="hw3" rows="2"cols="30" style="text-align:center" disabled>***S.st***</textarea>
+<textarea name="hw3" rows="2"cols="30" style="text-align:center" disabled></textarea>
 </form>
 </td>
 
 <td>
 <form>
-<textarea name="hw4" rows="2"cols="26" style="text-align:center" disabled>***VE***</textarea>
+<textarea name="hw4" rows="2"cols="26" style="text-align:center" disabled></textarea>
 </form>
 </td>
 
@@ -240,31 +598,31 @@ open("https://web.whatsapp.com/")
 
 <td>
 <form>
-<textarea name="hw" rows="2"cols="30" style="text-align:center" disabled>***Sci***</textarea>
+<textarea name="hw" rows="2"cols="30" style="text-align:center" disabled></textarea>
 </form>
 </td>
 
 <td>
 <form>
-<textarea name="hw1" rows="2"cols="30" style="text-align:center"  disabled>***Maths***</textarea>
+<textarea name="hw1" rows="2"cols="30" style="text-align:center"  disabled></textarea>
 </form>
 </td>
 
 <td>
 <form>
-<textarea name="hw2" rows="2"cols="30" style="text-align:center" disabled>***PE***</textarea>
+<textarea name="hw2" rows="2"cols="30" style="text-align:center" disabled></textarea>
 </form>
 </td>
 
 <td>
 <form>
-<textarea name="hw3" rows="2"cols="30" style="text-align:center" disabled>***Art***</textarea>
+<textarea name="hw3" rows="2"cols="30" style="text-align:center" disabled></textarea>
 </form>
 </td>
 
 <td>
 <form>
-<textarea name="hw4" rows="2"cols="26" style="text-align:center" disabled>***M/D***</textarea>
+<textarea name="hw4" rows="2"cols="26" style="text-align:center" disabled></textarea>
 </form>
 </td>
 
@@ -274,31 +632,31 @@ open("https://web.whatsapp.com/")
 
 <td>
 <form>
-<textarea name="hw" rows="2"cols="30" style="text-align:center" disabled>***English***</textarea>
+<textarea name="hw" rows="2"cols="30" style="text-align:center" disabled></textarea>
 </form>
 </td>
 
 <td>
 <form>
-<textarea name="hw1" rows="2"cols="30" style="text-align:center"  disabled>***Eng***</textarea>
+<textarea name="hw1" rows="2"cols="30" style="text-align:center"  disabled></textarea>
 </form>
 </td>
 
 <td>
 <form>
-<textarea name="hw2" rows="2"cols="30" style="text-align:center" disabled>***Comp.***</textarea>
+<textarea name="hw2" rows="2"cols="30" style="text-align:center" disabled></textarea>
 </form>
 </td>
 
 <td>
 <form>
-<textarea name="hw3" rows="2"cols="30" style="text-align:center" disabled>***Pe***</textarea>
+<textarea name="hw3" rows="2"cols="30" style="text-align:center" disabled></textarea>
 </form>
 </td>
 
 <td>
 <form>
-<textarea name="hw4" rows="2"cols="26" style="text-align:center" disabled>***S.st***</textarea>
+<textarea name="hw4" rows="2"cols="26" style="text-align:center" disabled></textarea>
 </form>
 </td>
 
@@ -308,31 +666,31 @@ open("https://web.whatsapp.com/")
 
 <td>
 <form>
-<textarea name="hw" rows="2"cols="30" style="text-align:center" disabled>***Maths***</textarea>
+<textarea name="hw" rows="2"cols="30" style="text-align:center" disabled></textarea>
 </form>
 </td>
 
 <td>
 <form>
-<textarea name="hw1" rows="2"cols="30" style="text-align:center"  disabled>***S.st***</textarea>
+<textarea name="hw1" rows="2"cols="30" style="text-align:center"  disabled></textarea>
 </form>
 </td>
 
 <td>
 <form>
-<textarea name="hw2" rows="2"cols="30" style="text-align:center" disabled>***S.st***</textarea>
+<textarea name="hw2" rows="2"cols="30" style="text-align:center" disabled></textarea>
 </form>
 </td>
 
 <td>
 <form>
-<textarea name="hw3" rows="2"cols="30" style="text-align:center" disabled>***Maths***</textarea>
+<textarea name="hw3" rows="2"cols="30" style="text-align:center" disabled></textarea>
 </form>
 </td>
 
 <td>
 <form>
-<textarea name="hw4" rows="2"cols="26" style="text-align:center" disabled>***F/Skt***</textarea>
+<textarea name="hw4" rows="2"cols="26" style="text-align:center" disabled></textarea>
 </form>
 </td>
 
@@ -342,35 +700,37 @@ open("https://web.whatsapp.com/")
 
 <td>
 <form>
-<textarea name="hw" rows="2"cols="30" style="text-align:center" disabled>***Hindi***</textarea>
+<textarea name="hw" rows="2"cols="30" style="text-align:center" disabled></textarea>
 </form>
 </td>
 
 <td>
 <form>
-<textarea name="hw1" rows="2"cols="30" style="text-align:center"  disabled>***Hindi***</textarea>
+<textarea name="hw1" rows="2"cols="30" style="text-align:center"  disabled></textarea>
 </form>
 </td>
 
 <td>
 <form>
-<textarea name="hw2" rows="2"cols="30" style="text-align:center" disabled>***Maths***</textarea>
+<textarea name="hw2" rows="2"cols="30" style="text-align:center" disabled></textarea>
 </form>
 </td>
 
 <td>
 <form>
-<textarea name="hw3" rows="2"cols="30" style="text-align:center" disabled>***Eng***</textarea>
+<textarea name="hw3" rows="2"cols="30" style="text-align:center" disabled></textarea>
 </form>
 </td>
 
 <td>
 <form>
-<textarea name="hw4" rows="2"cols="26" style="text-align:center" disabled>***Sci***</textarea>
+<textarea name="hw4" rows="2"cols="26" style="text-align:center" disabled></textarea>
 </form>
 </td>
 
 </tr>
+
+</div>
 </table>
 <br>
 
