@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>The VIRTUAL School</title>
+<title>The Virtual Helper</title>
 <meta charset="utf-8">
   <meta name="google-site-verification" content="dNjDzsStt4NoppBnjHQoq2dwm2UTUhbkEfN_3NaOR44" />
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -47,7 +47,6 @@ color:black;
 
 <script>
 function myFunction() {
-document.getElementById("btn").disabled = false;
 switch (new Date().getDay()) {
    case 1:
 document.getElementsByName("hw")[0].disabled = false;
@@ -88,6 +87,24 @@ document.getElementsByName("hw4")[2].disabled = false;
 document.getElementsByName("hw4")[3].disabled = false;
 document.getElementsByName("hw4")[4].disabled = false;
 document.getElementsByName("hw4")[5].disabled = false;
+break;
+
+case 6:
+document.getElementsByName("hw5")[0].disabled = false;
+document.getElementsByName("hw5")[1].disabled = false;
+document.getElementsByName("hw5")[2].disabled = false;
+document.getElementsByName("hw5")[3].disabled = false;
+document.getElementsByName("hw5")[4].disabled = false;
+document.getElementsByName("hw5")[5].disabled = false;
+    break;
+
+case 0:
+document.getElementsByName("hw6")[0].disabled = false;
+document.getElementsByName("hw6")[1].disabled = false;
+document.getElementsByName("hw6")[2].disabled = false;
+document.getElementsByName("hw6")[3].disabled = false;
+document.getElementsByName("hw6")[4].disabled = false;
+document.getElementsByName("hw6")[5].disabled = false;
 }
 
 document.getElementsByClassName("cl")[0].innerHTML = localStorage.getItem("1a");
@@ -158,6 +175,22 @@ document.getElementsByName("hw4")[2].value = localStorage.getItem("27c");
 document.getElementsByName("hw4")[3].value = localStorage.getItem("28c");
 document.getElementsByName("hw4")[4].value = localStorage.getItem("29c");
 document.getElementsByName("hw4")[5].value = localStorage.getItem("30c");
+
+document.getElementsByName("hw5")[0].value = localStorage.getItem("31c");
+document.getElementsByName("hw5")[1].value = localStorage.getItem("32c");
+document.getElementsByName("hw5")[2].value = localStorage.getItem("33c");
+document.getElementsByName("hw5")[3].value = localStorage.getItem("34c");
+document.getElementsByName("hw5")[4].value = localStorage.getItem("35c");
+document.getElementsByName("hw5")[5].value = localStorage.getItem("36c");
+
+document.getElementsByName("hw6")[0].value = localStorage.getItem("37c");
+document.getElementsByName("hw6")[1].value = localStorage.getItem("38c");
+document.getElementsByName("hw6")[2].value = localStorage.getItem("39c");
+document.getElementsByName("hw6")[3].value = localStorage.getItem("40c");
+document.getElementsByName("hw6")[4].value = localStorage.getItem("41c");
+document.getElementsByName("hw6")[5].value = localStorage.getItem("42c");
+
+document.getElementsByName("note")[0].value = localStorage.getItem("Note");
 };
 </script>
 
@@ -166,19 +199,20 @@ document.getElementsByName("hw4")[5].value = localStorage.getItem("30c");
 <body onLoad="myFunction()">
 
 <header>
-<h1 Style="font-size:300%;color:white">Welcome to The Virtual School</h1>
+<h1 Style="font-size:300%;color:white">Welcome to Virtual Helper</h1>
 
-<p Style="font-size:140%;">By DebStar17</p>
+<p Style="font-size:140%;">By DebStar17</p> <a href="https://debstar17.github.io/VirtualSchl.github.io/" target="_blank">Check out my Working...</a>
 
-<h1 style="font-size:200%">Classroom Links</h1>
-<button id="btna" type="button" style="font-size:150%" onclick="set_cl()">Set ClassRoom Links</button><br><br>
+<h1 style="font-size:200%">Links of Things</h1>
+<button id="btna" type="button" style="font-size:150%" onclick="set_cl()">Set Links...</button><br><br>
 
 <script>
 function set_cl() {
 
 if (document.getElementsByClassName("div")[0].hidden == true) {
+if (confirm("Do you want to set the Classroom links?")) {
 document.getElementsByClassName("div")[0].hidden = false;
-alert("Do you want to set the ClassRoom Links?");
+document.getElementsByClassName("div2")[0].hidden = true;
 
 document.getElementsByClassName("url")[0].value = localStorage.getItem("1a");
 document.getElementsByClassName("url")[1].value = localStorage.getItem("2a");
@@ -213,8 +247,9 @@ document.getElementsByClassName("cname")[12].value = localStorage.getItem("13b")
 document.getElementsByClassName("cname")[13].value = localStorage.getItem("14b");
 document.getElementsByClassName("cname")[14].value = localStorage.getItem("15b");
 document.getElementsByClassName("cname")[15].value = localStorage.getItem("16b");
+};
 } else {
-
+document.getElementsByClassName("div2")[0].hidden = false;
 document.getElementsByClassName("div")[0].hidden = true;
 }
 };
@@ -291,8 +326,6 @@ document.getElementsByClassName("cl")[12].setAttribute("href", localStorage.getI
 document.getElementsByClassName("cl")[13].setAttribute("href", localStorage.getItem("14b"));
 document.getElementsByClassName("cl")[14].setAttribute("href", localStorage.getItem("15b"));
 document.getElementsByClassName("cl")[15].setAttribute("href", localStorage.getItem("16b"));
-
-document.getElementsByClassName("div")[0].hidden = true;
 }
 </script>
 
@@ -306,34 +339,33 @@ document.getElementsByClassName("div")[0].hidden = true;
 <th>Class Link (Url on the Address bar)</th>
 </tr>
 
-<tr><td class="col1"><input type="url" class="url"></td> <td><input type="text" class="cname" size="135"></td></tr>
-<tr><td class="col1"><input type="url" class="url"></td> <td><input type="text" class="cname" size="135"></td></tr>
-<tr><td class="col1"><input type="url" class="url"></td> <td><input type="text" class="cname" size="135"></td></tr>
-<tr><td class="col1"><input type="url" class="url"></td> <td><input type="text" class="cname" size="135"></td></tr>
-<tr><td class="col1"><input type="url" class="url"></td> <td><input type="text" class="cname" size="135"></td></tr>
-<tr><td class="col1"><input type="url" class="url"></td> <td><input type="text" class="cname" size="135"></td></tr>
-<tr><td class="col1"><input type="url" class="url"></td> <td><input type="text" class="cname" size="135"></td></tr>
-<tr><td class="col1"><input type="url" class="url"></td> <td><input type="text" class="cname" size="135"></td></tr>
-<tr><td class="col1"><input type="url" class="url"></td> <td><input type="text" class="cname" size="135"></td></tr>
-<tr><td class="col1"><input type="url" class="url"></td> <td><input type="text" class="cname" size="135"></td></tr>
-<tr><td class="col1"><input type="url" class="url"></td> <td><input type="text" class="cname" size="135"></td></tr>
-<tr><td class="col1"><input type="url" class="url"></td> <td><input type="text" class="cname" size="135"></td></tr>
-<tr><td class="col1"><input type="url" class="url"></td> <td><input type="text" class="cname" size="135"></td></tr>
-<tr><td class="col1"><input type="url" class="url"></td> <td><input type="text" class="cname" size="135"></td></tr>
-<tr><td class="col1"><input type="url" class="url"></td> <td><input type="text" class="cname" size="135"></td></tr>
-<tr><td class="col1"><input type="url" class="url"></td> <td><input type="text" class="cname" size="135"></td></tr>
+<tr><td ><input type="url" onchange="Done()" class="url"></td> <td><input type="text" onchange="Done()" class="cname" size="135"></td></tr>
+<tr><td ><input type="url" onchange="Done()" class="url"></td> <td><input type="text" onchange="Done()" class="cname" size="135"></td></tr>
+<tr><td ><input type="url" onchange="Done()" class="url"></td> <td><input type="text" onchange="Done()" class="cname" size="135"></td></tr>
+<tr><td ><input type="url" onchange="Done()" class="url"></td> <td><input type="text" onchange="Done()" class="cname" size="135"></td></tr>
+<tr><td ><input type="url" onchange="Done()" class="url"></td> <td><input type="text" onchange="Done()" class="cname" size="135"></td></tr>
+<tr><td ><input type="url" onchange="Done()" class="url"></td> <td><input type="text" onchange="Done()" class="cname" size="135"></td></tr>
+<tr><td ><input type="url" onchange="Done()" class="url"></td> <td><input type="text" onchange="Done()" class="cname" size="135"></td></tr>
+<tr><td ><input type="url" onchange="Done()" class="url"></td> <td><input type="text" onchange="Done()" class="cname" size="135"></td></tr>
+<tr><td ><input type="url" onchange="Done()" class="url"></td> <td><input type="text" onchange="Done()" class="cname" size="135"></td></tr>
+<tr><td ><input type="url" onchange="Done()" class="url"></td> <td><input type="text" onchange="Done()" class="cname" size="135"></td></tr>
+<tr><td ><input type="url" onchange="Done()" class="url"></td> <td><input type="text" onchange="Done()" class="cname" size="135"></td></tr>
+<tr><td ><input type="url" onchange="Done()" class="url"></td> <td><input type="text" onchange="Done()" class="cname" size="135"></td></tr>
+<tr><td ><input type="url" onchange="Done()" class="url"></td> <td><input type="text" onchange="Done()" class="cname" size="135"></td></tr>
+<tr><td ><input type="url" onchange="Done()" class="url"></td> <td><input type="text" onchange="Done()" class="cname" size="135"></td></tr>
+<tr><td ><input type="url" onchange="Done()" class="url"></td> <td><input type="text" onchange="Done()" class="cname" size="135"></td></tr>
+<tr><td ><input type="url" onchange="Done()" class="url"></td> <td><input type="text" onchange="Done()" class="cname" size="135"></td></tr>
 </table>
-<br>
 
 <center>
-<button onclick="Done()" style="font-size:200%">Done</button>
-<br>
-**********************
+<b>/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\</b>
 </center>
-<br><br>
+<br>
 
 </div>
-<table>
+
+<div class="div2">
+<table style="empty-cells: hide;">
 <tr>
 
 <th><a class="cl" target="_blank"></a></th>
@@ -341,19 +373,7 @@ document.getElementsByClassName("div")[0].hidden = true;
 </tr>
 </table>
 
-<table>
-<tr>
-<th><a class="cl" target="_blank"></a></th>
-<th><a class="cl" target="_blank"></a></th>
-<th><a class="cl" target="_blank"></a></th>
-<th><a class="cl" target="_blank"></a></th>
-<th><a class="cl" target="_blank"></a></th>
-<th><a class="cl" target="_blank"></a></th>
-<th><a class="cl" target="_blank"></a></th>
-</tr>
-</table>
-
-<table>
+<table style="empty-cells: hide;">
 <tr>
 <th><a class="cl" target="_blank"></a></th>
 <th><a class="cl" target="_blank"></a></th>
@@ -364,6 +384,19 @@ document.getElementsByClassName("div")[0].hidden = true;
 <th><a class="cl" target="_blank"></a></th>
 </tr>
 </table>
+
+<table style="empty-cells: hide;">
+<tr>
+<th><a class="cl" target="_blank"></a></th>
+<th><a class="cl" target="_blank"></a></th>
+<th><a class="cl" target="_blank"></a></th>
+<th><a class="cl" target="_blank"></a></th>
+<th><a class="cl" target="_blank"></a></th>
+<th><a class="cl" target="_blank"></a></th>
+<th><a class="cl" target="_blank"></a></th>
+</tr>
+</table>
+</div>
 
 </header>
 <br>
@@ -381,14 +414,125 @@ open("https://web.whatsapp.com/")
 <h1>TimeTable + Hw pane</h1>
 
 </center>
-<button id="btna" type="button" style="font-size:150%" onclick="set_tt()">Set TimeTable</button>
-<button id="btnb" type="button" style="font-size:150%" onclick="hide()" hidden>Done/Hide</button><br><br>
+<button id="btna" type="button" style="font-size:150%" onclick="set_tt()">Set TimeTable</button><br><br>
 
 <script>
 function set_tt() {
-alert("Do you want to format the TimeTable?");
-document.getElementById("btnb").hidden = false;
-document.getElementById("btn").hidden = true;
+if (document.getElementsByName("hw")[0].disabled == false && document.getElementsByName("hw1")[0].disabled == false && document.getElementsByName("hw2")[0].disabled == false && document.getElementsByName("hw3")[0].disabled == false && document.getElementsByName("hw4")[0].disabled == false) {
+document.getElementById("btn2").hidden = false;
+
+document.getElementsByName("hw")[0].disabled = true;
+document.getElementsByName("hw")[1].disabled = true;
+document.getElementsByName("hw")[2].disabled = true;
+document.getElementsByName("hw")[3].disabled = true;
+document.getElementsByName("hw")[4].disabled = true;
+document.getElementsByName("hw")[5].disabled = true;
+
+document.getElementsByName("hw1")[0].disabled = true;
+document.getElementsByName("hw1")[1].disabled = true;
+document.getElementsByName("hw1")[2].disabled = true;
+document.getElementsByName("hw1")[3].disabled = true;
+document.getElementsByName("hw1")[4].disabled = true;
+document.getElementsByName("hw1")[5].disabled = true;
+
+document.getElementsByName("hw2")[0].disabled = true;
+document.getElementsByName("hw2")[1].disabled = true;
+document.getElementsByName("hw2")[2].disabled = true;
+document.getElementsByName("hw2")[3].disabled = true;
+document.getElementsByName("hw2")[4].disabled = true;
+document.getElementsByName("hw2")[5].disabled = true;
+
+document.getElementsByName("hw3")[0].disabled = true;
+document.getElementsByName("hw3")[1].disabled = true;
+document.getElementsByName("hw3")[2].disabled = true;
+document.getElementsByName("hw3")[3].disabled = true;
+document.getElementsByName("hw3")[4].disabled = true;
+document.getElementsByName("hw3")[5].disabled = true;
+
+document.getElementsByName("hw4")[0].disabled = true;
+document.getElementsByName("hw4")[1].disabled = true;
+document.getElementsByName("hw4")[2].disabled = true;
+document.getElementsByName("hw4")[3].disabled = true;
+document.getElementsByName("hw4")[4].disabled = true;
+document.getElementsByName("hw4")[5].disabled = true;
+
+document.getElementsByName("hw5")[0].disabled = true;
+document.getElementsByName("hw5")[1].disabled = true;
+document.getElementsByName("hw5")[2].disabled = true;
+document.getElementsByName("hw5")[3].disabled = true;
+document.getElementsByName("hw5")[4].disabled = true;
+document.getElementsByName("hw5")[5].disabled = true;
+
+document.getElementsByName("hw6")[0].disabled = true;
+document.getElementsByName("hw6")[1].disabled = true;
+document.getElementsByName("hw6")[2].disabled = true;
+document.getElementsByName("hw6")[3].disabled = true;
+document.getElementsByName("hw6")[4].disabled = true;
+document.getElementsByName("hw6")[5].disabled = true;
+//
+//
+//
+switch (new Date().getDay()) {
+   case 1:
+document.getElementsByName("hw")[0].disabled = false;
+document.getElementsByName("hw")[1].disabled = false;
+document.getElementsByName("hw")[2].disabled = false;
+document.getElementsByName("hw")[3].disabled = false;
+document.getElementsByName("hw")[4].disabled = false;
+document.getElementsByName("hw")[5].disabled = false;
+    break;
+  case 2:
+document.getElementsByName("hw1")[0].disabled = false;
+document.getElementsByName("hw1")[1].disabled = false;
+document.getElementsByName("hw1")[2].disabled = false;
+document.getElementsByName("hw1")[3].disabled = false;
+document.getElementsByName("hw1")[4].disabled = false;
+document.getElementsByName("hw1")[5].disabled = false;
+    break;
+  case 3:
+document.getElementsByName("hw2")[0].disabled = false;
+document.getElementsByName("hw2")[1].disabled = false;
+document.getElementsByName("hw2")[2].disabled = false;
+document.getElementsByName("hw2")[3].disabled = false;
+document.getElementsByName("hw2")[4].disabled = false;
+document.getElementsByName("hw2")[5].disabled = false;
+    break;
+  case 4:
+document.getElementsByName("hw3")[0].disabled = false;
+document.getElementsByName("hw3")[1].disabled = false;
+document.getElementsByName("hw3")[2].disabled = false;
+document.getElementsByName("hw3")[3].disabled = false;
+document.getElementsByName("hw3")[4].disabled = false;
+document.getElementsByName("hw3")[5].disabled = false;
+    break;
+  case 5:
+document.getElementsByName("hw4")[0].disabled = false;
+document.getElementsByName("hw4")[1].disabled = false;
+document.getElementsByName("hw4")[2].disabled = false;
+document.getElementsByName("hw4")[3].disabled = false;
+document.getElementsByName("hw4")[4].disabled = false;
+document.getElementsByName("hw4")[5].disabled = false;
+break;
+
+case 6:
+document.getElementsByName("hw5")[0].disabled = false;
+document.getElementsByName("hw5")[1].disabled = false;
+document.getElementsByName("hw5")[2].disabled = false;
+document.getElementsByName("hw5")[3].disabled = false;
+document.getElementsByName("hw5")[4].disabled = false;
+document.getElementsByName("hw5")[5].disabled = false;
+    break;
+
+case 0:
+document.getElementsByName("hw6")[0].disabled = false;
+document.getElementsByName("hw6")[1].disabled = false;
+document.getElementsByName("hw6")[2].disabled = false;
+document.getElementsByName("hw6")[3].disabled = false;
+document.getElementsByName("hw6")[4].disabled = false;
+document.getElementsByName("hw6")[5].disabled = false;
+}
+} else {
+if (confirm("Do you want to set the Timetable?")) {
 document.getElementById("btn2").hidden = true;
 
 document.getElementsByName("hw")[0].disabled = false;
@@ -426,50 +570,133 @@ document.getElementsByName("hw4")[3].disabled = false;
 document.getElementsByName("hw4")[4].disabled = false;
 document.getElementsByName("hw4")[5].disabled = false;
 
+document.getElementsByName("hw5")[0].disabled = false;
+document.getElementsByName("hw5")[1].disabled = false;
+document.getElementsByName("hw5")[2].disabled = false;
+document.getElementsByName("hw5")[3].disabled = false;
+document.getElementsByName("hw5")[4].disabled = false;
+document.getElementsByName("hw5")[5].disabled = false;
+
+document.getElementsByName("hw6")[0].disabled = false;
+document.getElementsByName("hw6")[1].disabled = false;
+document.getElementsByName("hw6")[2].disabled = false;
+document.getElementsByName("hw6")[3].disabled = false;
+document.getElementsByName("hw6")[4].disabled = false;
+document.getElementsByName("hw6")[5].disabled = false;
+};
+}
 };
 </script>
 
 <script>
-function hide() {
+function save() {
 
-document.getElementById("btnb").hidden = true;
-document.getElementById("btn").hidden = false;
-document.getElementById("btn2").hidden = false;
+switch (new Date().getDay()) {
 
-document.getElementsByName("hw")[0].disabled = true;
-document.getElementsByName("hw")[1].disabled = true;
-document.getElementsByName("hw")[2].disabled = true;
-document.getElementsByName("hw")[3].disabled = true;
-document.getElementsByName("hw")[4].disabled = true;
-document.getElementsByName("hw")[5].disabled = true;
+   case 1:
+var x = document.getElementsByName("hw")[0].value;
+var y = document.getElementsByName("hw")[1].value;
+var z = document.getElementsByName("hw")[2].value;
+var a = document.getElementsByName("hw")[3].value;
+var b = document.getElementsByName("hw")[4].value;
+var c = document.getElementsByName("hw")[5].value;
+localStorage.setItem("1", x);
+localStorage.setItem("2", y);
+localStorage.setItem("3", z);
+localStorage.setItem("4", a);
+localStorage.setItem("5", b);
+localStorage.setItem("6", c);
+    break;
+  case 2:
 
-document.getElementsByName("hw1")[0].disabled = true;
-document.getElementsByName("hw1")[1].disabled = true;
-document.getElementsByName("hw1")[2].disabled = true;
-document.getElementsByName("hw1")[3].disabled = true;
-document.getElementsByName("hw1")[4].disabled = true;
-document.getElementsByName("hw1")[5].disabled = true;
+var xx = document.getElementsByName("hw1")[0].value;
+var yy = document.getElementsByName("hw1")[1].value;
+var zz = document.getElementsByName("hw1")[2].value;
+var aa = document.getElementsByName("hw1")[3].value;
+var bb = document.getElementsByName("hw1")[4].value;
+var cc = document.getElementsByName("hw1")[5].value;
+localStorage.setItem("8", xx);
+localStorage.setItem("9", yy);
+localStorage.setItem("10", zz);
+localStorage.setItem("11", aa);
+localStorage.setItem("12", bb);
+localStorage.setItem("13", cc);
+    break;
+  case 3:
 
-document.getElementsByName("hw2")[0].disabled = true;
-document.getElementsByName("hw2")[1].disabled = true;
-document.getElementsByName("hw2")[2].disabled = true;
-document.getElementsByName("hw2")[3].disabled = true;
-document.getElementsByName("hw2")[4].disabled = true;
-document.getElementsByName("hw2")[5].disabled = true;
+var xxx = document.getElementsByName("hw2")[0].value;
+var yyy = document.getElementsByName("hw2")[1].value;
+var zzz = document.getElementsByName("hw2")[2].value;
+var aaa = document.getElementsByName("hw2")[3].value;
+var bbb = document.getElementsByName("hw2")[4].value;
+var ccc = document.getElementsByName("hw2")[5].value;
+localStorage.setItem("15", xxx);
+localStorage.setItem("16", yyy);
+localStorage.setItem("17", zzz);
+localStorage.setItem("18", aaa);
+localStorage.setItem("19", bbb);
+localStorage.setItem("20", ccc); 
+break;
+  case 4:
 
-document.getElementsByName("hw3")[0].disabled = true;
-document.getElementsByName("hw3")[1].disabled = true;
-document.getElementsByName("hw3")[2].disabled = true;
-document.getElementsByName("hw3")[3].disabled = true;
-document.getElementsByName("hw3")[4].disabled = true;
-document.getElementsByName("hw3")[5].disabled = true;
+var xxxx = document.getElementsByName("hw3")[0].value;
+var yyyy = document.getElementsByName("hw3")[1].value;
+var zzzz = document.getElementsByName("hw3")[2].value;
+var aaaa = document.getElementsByName("hw3")[3].value;
+var bbbb = document.getElementsByName("hw3")[4].value;
+var cccc = document.getElementsByName("hw3")[5].value;
+localStorage.setItem("22", xxxx);
+localStorage.setItem("23", yyyy);
+localStorage.setItem("24", zzzz);
+localStorage.setItem("25", aaaa);
+localStorage.setItem("26", bbbb);
+localStorage.setItem("27", cccc);
+    break;
+  case 5:
 
-document.getElementsByName("hw4")[0].disabled = true;
-document.getElementsByName("hw4")[1].disabled = true;
-document.getElementsByName("hw4")[2].disabled = true;
-document.getElementsByName("hw4")[3].disabled = true;
-document.getElementsByName("hw4")[4].disabled = true;
-document.getElementsByName("hw4")[5].disabled = true;
+var xxxxx = document.getElementsByName("hw4")[0].value;
+var yyyyy = document.getElementsByName("hw4")[1].value;
+var zzzzz = document.getElementsByName("hw4")[2].value;
+var aaaaa = document.getElementsByName("hw4")[3].value;
+var bbbbb = document.getElementsByName("hw4")[4].value;
+var ccccc = document.getElementsByName("hw4")[5].value;
+localStorage.setItem("29", xxxxx);
+localStorage.setItem("30", yyyyy);
+localStorage.setItem("31", zzzzz);
+localStorage.setItem("32", aaaaa);
+localStorage.setItem("33", bbbbb);
+localStorage.setItem("34", ccccc);
+break;
+  case 6:
+
+var xxxxxx = document.getElementsByName("hw5")[0].value;
+var yyyyyy = document.getElementsByName("hw5")[1].value;
+var zzzzzz = document.getElementsByName("hw5")[2].value;
+var aaaaaa = document.getElementsByName("hw5")[3].value;
+var bbbbbb = document.getElementsByName("hw5")[4].value;
+var cccccc = document.getElementsByName("hw5")[5].value;
+localStorage.setItem("35", xxxxxx);
+localStorage.setItem("36", yyyyyy);
+localStorage.setItem("37", zzzzzz);
+localStorage.setItem("38", aaaaaa);
+localStorage.setItem("39", bbbbbb);
+localStorage.setItem("40", cccccc);
+break;
+  case 0:
+
+var xxxxxxx = document.getElementsByName("hw6")[0].value;
+var yyyyyyy = document.getElementsByName("hw6")[1].value;
+var zzzzzzz = document.getElementsByName("hw6")[2].value;
+var aaaaaaa = document.getElementsByName("hw6")[3].value;
+var bbbbbbb = document.getElementsByName("hw6")[4].value;
+var ccccccc = document.getElementsByName("hw6")[5].value;
+localStorage.setItem("41", xxxxxxx);
+localStorage.setItem("42", yyyyyyy);
+localStorage.setItem("43", zzzzzzz);
+localStorage.setItem("44", aaaaaaa);
+localStorage.setItem("45", bbbbbbb);
+localStorage.setItem("46", ccccccc);
+}
 ////
 ////
 ////
@@ -509,6 +736,21 @@ localStorage.setItem("27c", document.getElementsByName("hw4")[2].value);
 localStorage.setItem("28c", document.getElementsByName("hw4")[3].value);
 localStorage.setItem("29c", document.getElementsByName("hw4")[4].value);
 localStorage.setItem("30c", document.getElementsByName("hw4")[5].value);
+
+localStorage.setItem("31c", document.getElementsByName("hw5")[0].value);
+localStorage.setItem("32c", document.getElementsByName("hw5")[1].value);
+localStorage.setItem("33c", document.getElementsByName("hw5")[2].value);
+localStorage.setItem("34c", document.getElementsByName("hw5")[3].value);
+localStorage.setItem("35c", document.getElementsByName("hw5")[4].value);
+localStorage.setItem("36c", document.getElementsByName("hw5")[5].value);
+
+localStorage.setItem("37c", document.getElementsByName("hw6")[0].value);
+localStorage.setItem("38c", document.getElementsByName("hw6")[1].value);
+localStorage.setItem("39c", document.getElementsByName("hw6")[2].value);
+localStorage.setItem("40c", document.getElementsByName("hw6")[3].value);
+localStorage.setItem("41c", document.getElementsByName("hw6")[4].value);
+localStorage.setItem("42c", document.getElementsByName("hw6")[5].value);
+
 };
 </script>
 
@@ -520,6 +762,8 @@ localStorage.setItem("30c", document.getElementsByName("hw4")[5].value);
 <th>WEDNESDAY</th>
 <th>THURSDAY</th>
 <th>FRIDAY</th>
+<th>SATURDAY</th>
+<th>SUNDAY</th>
 
 </tr>
 <tr>
@@ -528,34 +772,45 @@ localStorage.setItem("30c", document.getElementsByName("hw4")[5].value);
 
 <td>
 <form>
-<textarea name="hw" rows="2"cols="30" style="text-align:center" disabled></textarea>
+<textarea name="hw" rows="2"cols="19"  onchange="save()" style="text-align:center" disabled></textarea>
 </form>
 </td>
 
 <td>
 <form>
-<textarea name="hw1" rows="2"cols="30" style="text-align:center"  disabled></textarea>
+<textarea name="hw1" rows="2"cols="19" onchange="save()" style="text-align:center" disabled></textarea>
 </form>
 </td>
 
 <td>
 <form>
-<textarea name="hw2" rows="2"cols="30" style="text-align:center" disabled></textarea>
+<textarea name="hw2" rows="2"cols="22" onchange="save()" style="text-align:center" disabled></textarea>
 </form>
 </td>
 
 <td>
 <form>
-<textarea name="hw3" rows="2"cols="30" style="text-align:center" disabled></textarea>
+<textarea name="hw3" rows="2"cols="19" onchange="save()" style="text-align:center" disabled></textarea>
 </form>
 </td>
 
 <td>
 <form>
-<textarea name="hw4" rows="2"cols="26" style="text-align:center" disabled></textarea>
+<textarea name="hw4" rows="2"cols="19" onchange="save()" style="text-align:center" disabled></textarea>
 </form>
 </td>
 
+<td>
+<form>
+<textarea name="hw5" rows="2"cols="19" onchange="save()" style="text-align:center" disabled></textarea>
+</form>
+</td>
+
+<td>
+<form>
+<textarea name="hw6" rows="2"cols="19" onchange="save()" style="text-align:center" disabled></textarea>
+</form>
+</td>
 
 </tr>
 
@@ -564,31 +819,178 @@ localStorage.setItem("30c", document.getElementsByName("hw4")[5].value);
 
 <td>
 <form>
-<textarea name="hw" rows="2"cols="30" style="text-align:center" disabled></textarea>
+<textarea name="hw" rows="2"cols="19"  onchange="save()" style="text-align:center" disabled></textarea>
 </form>
 </td>
 
 <td>
 <form>
-<textarea name="hw1" rows="2"cols="30" style="text-align:center"  disabled></textarea>
+<textarea name="hw1" rows="2"cols="19" onchange="save()" style="text-align:center" disabled></textarea>
 </form>
 </td>
 
 <td>
 <form>
-<textarea name="hw2" rows="2"cols="30" style="text-align:center" disabled></textarea>
+<textarea name="hw2" rows="2"cols="22" onchange="save()" style="text-align:center" disabled></textarea>
 </form>
 </td>
 
 <td>
 <form>
-<textarea name="hw3" rows="2"cols="30" style="text-align:center" disabled></textarea>
+<textarea name="hw3" rows="2"cols="19" onchange="save()" style="text-align:center" disabled></textarea>
 </form>
 </td>
 
 <td>
 <form>
-<textarea name="hw4" rows="2"cols="26" style="text-align:center" disabled></textarea>
+<textarea name="hw4" rows="2"cols="19" onchange="save()" style="text-align:center" disabled></textarea>
+</form>
+</td>
+
+<td>
+<form>
+<textarea name="hw5" rows="2"cols="19" onchange="save()" style="text-align:center" disabled></textarea>
+</form>
+</td>
+
+<td>
+<form>
+<textarea name="hw6" rows="2"cols="19" onchange="save()" style="text-align:center" disabled></textarea>
+</form>
+</td>
+
+</tr>
+<tr>
+
+<td>
+<form>
+<textarea name="hw" rows="2"cols="19"  onchange="save()" style="text-align:center" disabled></textarea>
+</form>
+</td>
+
+<td>
+<form>
+<textarea name="hw1" rows="2"cols="19" onchange="save()" style="text-align:center" disabled></textarea>
+</form>
+</td>
+
+<td>
+<form>
+<textarea name="hw2" rows="2"cols="22" onchange="save()" style="text-align:center" disabled></textarea>
+</form>
+</td>
+
+<td>
+<form>
+<textarea name="hw3" rows="2"cols="19" onchange="save()" style="text-align:center" disabled></textarea>
+</form>
+</td>
+
+<td>
+<form>
+<textarea name="hw4" rows="2"cols="19" onchange="save()" style="text-align:center" disabled></textarea>
+</form>
+</td>
+
+<td>
+<form>
+<textarea name="hw5" rows="2"cols="19" onchange="save()" style="text-align:center" disabled></textarea>
+</form>
+</td>
+
+<td>
+<form>
+<textarea name="hw6" rows="2"cols="19" onchange="save()" style="text-align:center" disabled></textarea>
+</form>
+</td>
+
+</tr>
+<tr>
+
+<td>
+<form>
+<textarea name="hw" rows="2"cols="19"  onchange="save()" style="text-align:center" disabled></textarea>
+</form>
+</td>
+
+<td>
+<form>
+<textarea name="hw1" rows="2"cols="19" onchange="save()" style="text-align:center" disabled></textarea>
+</form>
+</td>
+
+<td>
+<form>
+<textarea name="hw2" rows="2"cols="22" onchange="save()" style="text-align:center" disabled></textarea>
+</form>
+</td>
+
+<td>
+<form>
+<textarea name="hw3" rows="2"cols="19" onchange="save()" style="text-align:center" disabled></textarea>
+</form>
+</td>
+
+<td>
+<form>
+<textarea name="hw4" rows="2"cols="19" onchange="save()" style="text-align:center" disabled></textarea>
+</form>
+</td>
+
+<td>
+<form>
+<textarea name="hw5" rows="2"cols="19" onchange="save()" style="text-align:center" disabled></textarea>
+</form>
+</td>
+
+<td>
+<form>
+<textarea name="hw6" rows="2"cols="19" onchange="save()" style="text-align:center" disabled></textarea>
+</form>
+</td>
+
+</tr>
+<tr>
+
+<td>
+<form>
+<textarea name="hw" rows="2"cols="19"  onchange="save()" style="text-align:center" disabled></textarea>
+</form>
+</td>
+
+<td>
+<form>
+<textarea name="hw1" rows="2"cols="19" onchange="save()" style="text-align:center" disabled></textarea>
+</form>
+</td>
+
+<td>
+<form>
+<textarea name="hw2" rows="2"cols="22" onchange="save()" style="text-align:center" disabled></textarea>
+</form>
+</td>
+
+<td>
+<form>
+<textarea name="hw3" rows="2"cols="19" onchange="save()" style="text-align:center" disabled></textarea>
+</form>
+</td>
+
+<td>
+<form>
+<textarea name="hw4" rows="2"cols="19" onchange="save()" style="text-align:center" disabled></textarea>
+</form>
+</td>
+
+<td>
+<form>
+<textarea name="hw5" rows="2"cols="19" onchange="save()" style="text-align:center" disabled></textarea>
+</form>
+</td>
+
+<td>
+<form>
+<textarea name="hw6" rows="2"cols="19" onchange="save()" style="text-align:center" disabled></textarea>
 </form>
 </td>
 
@@ -598,133 +1000,43 @@ localStorage.setItem("30c", document.getElementsByName("hw4")[5].value);
 
 <td>
 <form>
-<textarea name="hw" rows="2"cols="30" style="text-align:center" disabled></textarea>
+<textarea name="hw" rows="2"cols="19"  onchange="save()" style="text-align:center" disabled></textarea>
 </form>
 </td>
 
 <td>
 <form>
-<textarea name="hw1" rows="2"cols="30" style="text-align:center"  disabled></textarea>
+<textarea name="hw1" rows="2"cols="19" onchange="save()" style="text-align:center" disabled></textarea>
 </form>
 </td>
 
 <td>
 <form>
-<textarea name="hw2" rows="2"cols="30" style="text-align:center" disabled></textarea>
+<textarea name="hw2" rows="2"cols="22" onchange="save()" style="text-align:center" disabled></textarea>
 </form>
 </td>
 
 <td>
 <form>
-<textarea name="hw3" rows="2"cols="30" style="text-align:center" disabled></textarea>
+<textarea name="hw3" rows="2"cols="19" onchange="save()" style="text-align:center" disabled></textarea>
 </form>
 </td>
 
 <td>
 <form>
-<textarea name="hw4" rows="2"cols="26" style="text-align:center" disabled></textarea>
-</form>
-</td>
-
-
-</tr>
-<tr>
-
-<td>
-<form>
-<textarea name="hw" rows="2"cols="30" style="text-align:center" disabled></textarea>
+<textarea name="hw4" rows="2"cols="19" onchange="save()" style="text-align:center" disabled></textarea>
 </form>
 </td>
 
 <td>
 <form>
-<textarea name="hw1" rows="2"cols="30" style="text-align:center"  disabled></textarea>
+<textarea name="hw5" rows="2"cols="19" onchange="save()" style="text-align:center" disabled></textarea>
 </form>
 </td>
 
 <td>
 <form>
-<textarea name="hw2" rows="2"cols="30" style="text-align:center" disabled></textarea>
-</form>
-</td>
-
-<td>
-<form>
-<textarea name="hw3" rows="2"cols="30" style="text-align:center" disabled></textarea>
-</form>
-</td>
-
-<td>
-<form>
-<textarea name="hw4" rows="2"cols="26" style="text-align:center" disabled></textarea>
-</form>
-</td>
-
-
-</tr>
-<tr>
-
-<td>
-<form>
-<textarea name="hw" rows="2"cols="30" style="text-align:center" disabled></textarea>
-</form>
-</td>
-
-<td>
-<form>
-<textarea name="hw1" rows="2"cols="30" style="text-align:center"  disabled></textarea>
-</form>
-</td>
-
-<td>
-<form>
-<textarea name="hw2" rows="2"cols="30" style="text-align:center" disabled></textarea>
-</form>
-</td>
-
-<td>
-<form>
-<textarea name="hw3" rows="2"cols="30" style="text-align:center" disabled></textarea>
-</form>
-</td>
-
-<td>
-<form>
-<textarea name="hw4" rows="2"cols="26" style="text-align:center" disabled></textarea>
-</form>
-</td>
-
-
-</tr>
-<tr>
-
-<td>
-<form>
-<textarea name="hw" rows="2"cols="30" style="text-align:center" disabled></textarea>
-</form>
-</td>
-
-<td>
-<form>
-<textarea name="hw1" rows="2"cols="30" style="text-align:center"  disabled></textarea>
-</form>
-</td>
-
-<td>
-<form>
-<textarea name="hw2" rows="2"cols="30" style="text-align:center" disabled></textarea>
-</form>
-</td>
-
-<td>
-<form>
-<textarea name="hw3" rows="2"cols="30" style="text-align:center" disabled></textarea>
-</form>
-</td>
-
-<td>
-<form>
-<textarea name="hw4" rows="2"cols="26" style="text-align:center" disabled></textarea>
+<textarea name="hw6" rows="2"cols="19" onchange="save()" style="text-align:center" disabled></textarea>
 </form>
 </td>
 
@@ -735,12 +1047,12 @@ localStorage.setItem("30c", document.getElementsByName("hw4")[5].value);
 <br>
 
 <center>
-<button onclick="Store()" style="font-size:200%" id="btn" disabled>SAVE</button>
 <button onclick="hw()" style="font-size:200%" id="btn2">HOMEWORK</button>
 </center>
-<h1 id="Home">************</h1>
 
+<h1 id="Home" hidden>Scroll Down to See Today's homework...</h1>
 
+<div class="hw_pane">
 <h1 style="color:green" id="date"></h1>
 <h2 id="a1"></h2>
 <h2 id="b1"></h2>
@@ -748,8 +1060,6 @@ localStorage.setItem("30c", document.getElementsByName("hw4")[5].value);
 <h2 id="d1"></p>
 <h2 id="e1"></h2>
 <h2 id="f1"></h2>
-
-
 
  <h1 style="color:green" id="date2"></h1> 
 <h2 id="a2"></h2>
@@ -759,8 +1069,6 @@ localStorage.setItem("30c", document.getElementsByName("hw4")[5].value);
 <h2 id="e2"></h2>
 <h2 id="f2"></h2>
 
-
-
 <h1 style="color:green" id="date3"></h1> 
 <h2 id="a3"></h2>
 <h2 id="b3"></h2>
@@ -768,8 +1076,6 @@ localStorage.setItem("30c", document.getElementsByName("hw4")[5].value);
 <h2 id="d3"></p>
 <h2 id="e3"></h2>
 <h2 id="f3"></h2>
-
-
 
  <h1 style="color:green" id="date4"></h1> 
 <h2 id="a4"></h2>
@@ -779,8 +1085,6 @@ localStorage.setItem("30c", document.getElementsByName("hw4")[5].value);
 <h2 id="e4"></h2>
 <h2 id="f4"></h2>
 
-
-
  <h1 style="color:green" id="date5"></h1> 
 <h2 id="a5"></h2>
 <h2 id="b5"></h2>
@@ -789,109 +1093,30 @@ localStorage.setItem("30c", document.getElementsByName("hw4")[5].value);
 <h2 id="e5"></h2>
 <h2 id="f5"></h2>
 
-<script>
-function Store() {
-alert ("Saved!");
-document.getElementById("Home").innerHTML = "Now try clicking the Homework Button...";
-document.getElementById("btn2").disabled = false;
-document.getElementById("btn1").disabled = true;
-var d = new Date();
-var n = "Date... " + d.getUTCDate() + "/" + d.getUTCMonth() + "/" + d.getUTCFullYear();
+ <h1 style="color:green" id="date6"></h1> 
+<h2 id="a6"></h2>
+<h2 id="b6"></h2>
+<h2 id="c6"></h2>
+<h2 id="d6"></p>
+<h2 id="e6"></h2>
+<h2 id="f6"></h2>
 
-window.localStorage;
+ <h1 style="color:green" id="date7"></h1> 
+<h2 id="a7"></h2>
+<h2 id="b7"></h2>
+<h2 id="c7"></h2>
+<h2 id="d7"></p>
+<h2 id="e7"></h2>
+<h2 id="f7"></h2>
 
-switch (new Date().getDay()) {
-
-   case 1:
-var x = document.getElementsByName("hw")[0].value;
-var y = document.getElementsByName("hw")[1].value;
-var z = document.getElementsByName("hw")[2].value;
-var a = document.getElementsByName("hw")[3].value;
-var b = document.getElementsByName("hw")[4].value;
-var c = document.getElementsByName("hw")[5].value;
-localStorage.setItem("1", x);
-localStorage.setItem("2", y);
-localStorage.setItem("3", z);
-localStorage.setItem("4", a);
-localStorage.setItem("5", b);
-localStorage.setItem("6", c);
-localStorage.setItem("7", n);
-    break;
-  case 2:
-
-var xx = document.getElementsByName("hw1")[0].value;
-var yy = document.getElementsByName("hw1")[1].value;
-var zz = document.getElementsByName("hw1")[2].value;
-var aa = document.getElementsByName("hw1")[3].value;
-var bb = document.getElementsByName("hw1")[4].value;
-var cc = document.getElementsByName("hw1")[5].value;
-localStorage.setItem("8", xx);
-localStorage.setItem("9", yy);
-localStorage.setItem("10", zz);
-localStorage.setItem("11", aa);
-localStorage.setItem("12", bb);
-localStorage.setItem("13", cc);
-localStorage.setItem("14", n);
-    break;
-  case 3:
-
-var xxx = document.getElementsByName("hw2")[0].value;
-var yyy = document.getElementsByName("hw2")[1].value;
-var zzz = document.getElementsByName("hw2")[2].value;
-var aaa = document.getElementsByName("hw2")[3].value;
-var bbb = document.getElementsByName("hw2")[4].value;
-var ccc = document.getElementsByName("hw2")[5].value;
-localStorage.setItem("15", xxx);
-localStorage.setItem("16", yyy);
-localStorage.setItem("17", zzz);
-localStorage.setItem("18", aaa);
-localStorage.setItem("19", bbb);
-localStorage.setItem("20", ccc);
-localStorage.setItem("21", n);   
-break;
-  case 4:
-
-var xxxx = document.getElementsByName("hw3")[0].value;
-var yyyy = document.getElementsByName("hw3")[1].value;
-var zzzz = document.getElementsByName("hw3")[2].value;
-var aaaa = document.getElementsByName("hw3")[3].value;
-var bbbb = document.getElementsByName("hw3")[4].value;
-var cccc = document.getElementsByName("hw3")[5].value;
-localStorage.setItem("22", xxxx);
-localStorage.setItem("23", yyyy);
-localStorage.setItem("24", zzzz);
-localStorage.setItem("25", aaaa);
-localStorage.setItem("26", bbbb);
-localStorage.setItem("27", cccc);
-localStorage.setItem("28", n);
-    break;
-  case 5:
-
-var xxxxx = document.getElementsByName("hw4")[0].value;
-var yyyyy = document.getElementsByName("hw4")[1].value;
-var zzzzz = document.getElementsByName("hw4")[2].value;
-var aaaaa = document.getElementsByName("hw4")[3].value;
-var bbbbb = document.getElementsByName("hw4")[4].value;
-var ccccc = document.getElementsByName("hw4")[5].value;
-localStorage.setItem("29", xxxxx);
-localStorage.setItem("30", yyyyy);
-localStorage.setItem("31", zzzzz);
-localStorage.setItem("32", aaaaa);
-localStorage.setItem("33", bbbbb);
-localStorage.setItem("34", ccccc);
-localStorage.setItem("35", n);
-
-}
-
-};
-</script>
+</div>
+<h1>************</h1>
 
 <script>
 function hw() {
-
-document.getElementById("btn2").disabled = true;
-document.getElementById("btn1").disabled = true;
-document.getElementById("Home").innerHTML = "Scroll Down to See Today's homework...";
+if (document.getElementById("Home").hidden == true) {
+document.getElementById("Home").hidden=false;
+document.getElementsByClassName("hw_pane")[0].hidden = false;
 window.localStorage;
 
 
@@ -1070,6 +1295,14 @@ document.getElementById("d5").innerHTML = localStorage.getItem("32");
 document.getElementById("e5").innerHTML = localStorage.getItem("33");
 document.getElementById("f5").innerHTML = localStorage.getItem("34");
 
+  document.getElementById("date6").innerHTML = "Saturday "
+document.getElementById("a6").innerHTML = localStorage.getItem("35");
+document.getElementById("b6").innerHTML = localStorage.getItem("36");
+document.getElementById("c6").innerHTML = localStorage.getItem("37");
+document.getElementById("d6").innerHTML = localStorage.getItem("38");
+document.getElementById("e6").innerHTML = localStorage.getItem("39");
+document.getElementById("f6").innerHTML = localStorage.getItem("40");
+
   case 0:
 
  document.getElementById("date").innerHTML = "Monday "
@@ -1112,10 +1345,54 @@ document.getElementById("d5").innerHTML = localStorage.getItem("32");
 document.getElementById("e5").innerHTML = localStorage.getItem("33");
 document.getElementById("f5").innerHTML = localStorage.getItem("34");
 
-}
+  document.getElementById("date6").innerHTML = "Saturday "
+document.getElementById("a6").innerHTML = localStorage.getItem("35");
+document.getElementById("b6").innerHTML = localStorage.getItem("36");
+document.getElementById("c6").innerHTML = localStorage.getItem("37");
+document.getElementById("d6").innerHTML = localStorage.getItem("38");
+document.getElementById("e6").innerHTML = localStorage.getItem("39");
+document.getElementById("f6").innerHTML = localStorage.getItem("40");
 
+  document.getElementById("date7").innerHTML = "Sunday "
+document.getElementById("a7").innerHTML = localStorage.getItem("41");
+document.getElementById("b7").innerHTML = localStorage.getItem("42");
+document.getElementById("c7").innerHTML = localStorage.getItem("43");
+document.getElementById("d7").innerHTML = localStorage.getItem("44");
+document.getElementById("e7").innerHTML = localStorage.getItem("45");
+document.getElementById("f7").innerHTML = localStorage.getItem("46");
+}
+} else {
+document.getElementsByClassName("hw_pane")[0].hidden = true;
+document.getElementById("Home").hidden = true;
+}
 };
 </script>
+
+<h1 onclick="n_show()" style ="color:blue" id="t_note">Take Notes...(-)</h1>
+
+<script>
+function notes() {
+localStorage.setItem("Note", document.getElementsByName("note")[0].value);
+localStorage.setItem("1c", document.getElementsByName("hw")[0].value);
+}
+</script>
+
+<script>
+function n_show() {
+if (document.getElementsByName("note")[0].hidden == false) {
+document.getElementById("t_note").innerHTML = "Take Notes...(+)";
+document.getElementsByName("note")[0].hidden = true;
+} else {
+document.getElementById("t_note").innerHTML = "Take Notes...(-)";
+document.getElementsByName("note")[0].hidden = false;
+}
+}
+</script>
+
+<form>
+<textarea name="note" rows="10"cols="141.5" onchange="notes()" style="font-size:100%; border:3px double blue;" placeholder="Enter whatever notes you want to take...
+These notes will forever stay with you!"></textarea>
+</form>
 
 </body>
 </html>
