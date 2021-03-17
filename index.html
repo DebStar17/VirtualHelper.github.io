@@ -210,7 +210,7 @@ document.getElementsByName("note")[0].value = localStorage.getItem("Note");
 function set_cl() {
 
 if (document.getElementsByClassName("div")[0].hidden == true) {
-if (confirm("Do you want to set the Classroom links?")) {
+if (confirm("Do you want to set the links?")) {
 document.getElementsByClassName("div")[0].hidden = false;
 document.getElementsByClassName("div2")[0].hidden = true;
 
@@ -330,13 +330,13 @@ document.getElementsByClassName("cl")[15].setAttribute("href", localStorage.getI
 </script>
 
 <div class="div" hidden>
-<h1>Enter the Name of Classroom and Link in the blanks...<br></h1>
+<h1>Enter the Name and Link in the blanks...<br></h1>
 
 <table>
 
 <tr>
-<th>Class Name</th>
-<th>Class Link (Url on the Address bar)</th>
+<th>Name</th>
+<th>Link (Url on the Address bar)</th>
 </tr>
 
 <tr><td ><input type="url" onchange="Done()" class="url"></td> <td><input type="text" onchange="Done()" class="cname" size="135"></td></tr>
