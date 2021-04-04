@@ -136,6 +136,7 @@ document.getElementsByName("note")[0].value = localStorage.getItem("Note");
 if (localStorage.getItem("THead") == 0) {
 
 document.getElementById("THeads").value = "Monday, Tuesday..."
+document.getElementsByName("THeads")[1].hidden = true;
 
 document.getElementsByClassName("th")[0].innerHTML = "Monday";
 document.getElementsByClassName("th")[1].innerHTML = "Tuesday";
@@ -510,6 +511,7 @@ if (localStorage.getItem("THead") == 1) {
 
 var Day = prompt("Enter today's Day no.(without spaces)", "1");
 document.getElementById("THeads").value = "Day 1, Day 2..."
+document.getElementsByName("THeads")[1].hidden = false;
 
 document.getElementsByClassName("th")[0].innerHTML = "Day 1";
 document.getElementsByClassName("th")[1].innerHTML = "Day 2";
