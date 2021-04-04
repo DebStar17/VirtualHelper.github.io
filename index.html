@@ -1183,18 +1183,6 @@ document.getElementsByName("hw6")[3].disabled = true;
 document.getElementsByName("hw6")[4].disabled = true;
 document.getElementsByName("hw6")[5].disabled = true;
 
-var x = document.getElementsByName("hw")[0].value;
-var y = document.getElementsByName("hw")[1].value;
-var z = document.getElementsByName("hw")[2].value;
-var a = document.getElementsByName("hw")[3].value;
-var b = document.getElementsByName("hw")[4].value;
-var c = document.getElementsByName("hw")[5].value;
-localStorage.setItem("1", x);
-localStorage.setItem("2", y);
-localStorage.setItem("3", z);
-localStorage.setItem("4", a);
-localStorage.setItem("5", b);
-localStorage.setItem("6", c);
     break;
   case "2":
 document.getElementsByName("hw1")[0].disabled = false;
@@ -1246,18 +1234,6 @@ document.getElementsByName("hw6")[3].disabled = true;
 document.getElementsByName("hw6")[4].disabled = true;
 document.getElementsByName("hw6")[5].disabled = true;
 
-var xx = document.getElementsByName("hw1")[0].value;
-var yy = document.getElementsByName("hw1")[1].value;
-var zz = document.getElementsByName("hw1")[2].value;
-var aa = document.getElementsByName("hw1")[3].value;
-var bb = document.getElementsByName("hw1")[4].value;
-var cc = document.getElementsByName("hw1")[5].value;
-localStorage.setItem("8", xx);
-localStorage.setItem("9", yy);
-localStorage.setItem("10", zz);
-localStorage.setItem("11", aa);
-localStorage.setItem("12", bb);
-localStorage.setItem("13", cc)
     break;
   case "3":
 document.getElementsByName("hw2")[0].disabled = false;
@@ -1308,19 +1284,7 @@ document.getElementsByName("hw6")[2].disabled = true;
 document.getElementsByName("hw6")[3].disabled = true;
 document.getElementsByName("hw6")[4].disabled = true;
 document.getElementsByName("hw6")[5].disabled = true;
-
-var xxx = document.getElementsByName("hw2")[0].value;
-var yyy = document.getElementsByName("hw2")[1].value;
-var zzz = document.getElementsByName("hw2")[2].value;
-var aaa = document.getElementsByName("hw2")[3].value;
-var bbb = document.getElementsByName("hw2")[4].value;
-var ccc = document.getElementsByName("hw2")[5].value;
-localStorage.setItem("15", xxx);
-localStorage.setItem("16", yyy);
-localStorage.setItem("17", zzz);
-localStorage.setItem("18", aaa);
-localStorage.setItem("19", bbb);
-localStorage.setItem("20", ccc); 
+ 
     break;
   case "4":
 document.getElementsByName("hw3")[0].disabled = false;
@@ -1372,18 +1336,6 @@ document.getElementsByName("hw6")[3].disabled = true;
 document.getElementsByName("hw6")[4].disabled = true;
 document.getElementsByName("hw6")[5].disabled = true;
 
-var xxxx = document.getElementsByName("hw3")[0].value;
-var yyyy = document.getElementsByName("hw3")[1].value;
-var zzzz = document.getElementsByName("hw3")[2].value;
-var aaaa = document.getElementsByName("hw3")[3].value;
-var bbbb = document.getElementsByName("hw3")[4].value;
-var cccc = document.getElementsByName("hw3")[5].value;
-localStorage.setItem("22", xxxx);
-localStorage.setItem("23", yyyy);
-localStorage.setItem("24", zzzz);
-localStorage.setItem("25", aaaa);
-localStorage.setItem("26", bbbb);
-localStorage.setItem("27", cccc);
     break;
   case "5":
 document.getElementsByName("hw4")[0].disabled = false;
@@ -1435,18 +1387,6 @@ document.getElementsByName("hw6")[3].disabled = true;
 document.getElementsByName("hw6")[4].disabled = true;
 document.getElementsByName("hw6")[5].disabled = true;
 
-var xxxxx = document.getElementsByName("hw4")[0].value;
-var yyyyy = document.getElementsByName("hw4")[1].value;
-var zzzzz = document.getElementsByName("hw4")[2].value;
-var aaaaa = document.getElementsByName("hw4")[3].value;
-var bbbbb = document.getElementsByName("hw4")[4].value;
-var ccccc = document.getElementsByName("hw4")[5].value;
-localStorage.setItem("29", xxxxx);
-localStorage.setItem("30", yyyyy);
-localStorage.setItem("31", zzzzz);
-localStorage.setItem("32", aaaaa);
-localStorage.setItem("33", bbbbb);
-localStorage.setItem("34", ccccc);
 break;
 
 case "6":
@@ -1499,18 +1439,6 @@ document.getElementsByName("hw6")[3].disabled = true;
 document.getElementsByName("hw6")[4].disabled = true;
 document.getElementsByName("hw6")[5].disabled = true;
 
-var xxxxxx = document.getElementsByName("hw5")[0].value;
-var yyyyyy = document.getElementsByName("hw5")[1].value;
-var zzzzzz = document.getElementsByName("hw5")[2].value;
-var aaaaaa = document.getElementsByName("hw5")[3].value;
-var bbbbbb = document.getElementsByName("hw5")[4].value;
-var cccccc = document.getElementsByName("hw5")[5].value;
-localStorage.setItem("35", xxxxxx);
-localStorage.setItem("36", yyyyyy);
-localStorage.setItem("37", zzzzzz);
-localStorage.setItem("38", aaaaaa);
-localStorage.setItem("39", bbbbbb);
-localStorage.setItem("40", cccccc);
     break;
 
 case "7":
@@ -1562,19 +1490,6 @@ document.getElementsByName("hw")[2].disabled = true;
 document.getElementsByName("hw")[3].disabled = true;
 document.getElementsByName("hw")[4].disabled = true;
 document.getElementsByName("hw")[5].disabled = true;
-
-var xxxxxxx = document.getElementsByName("hw6")[0].value;
-var yyyyyyy = document.getElementsByName("hw6")[1].value;
-var zzzzzzz = document.getElementsByName("hw6")[2].value;
-var aaaaaaa = document.getElementsByName("hw6")[3].value;
-var bbbbbbb = document.getElementsByName("hw6")[4].value;
-var ccccccc = document.getElementsByName("hw6")[5].value;
-localStorage.setItem("41", xxxxxxx);
-localStorage.setItem("42", yyyyyyy);
-localStorage.setItem("43", zzzzzzz);
-localStorage.setItem("44", aaaaaaa);
-localStorage.setItem("45", bbbbbbb);
-localStorage.setItem("46", ccccccc);
 }
 } else {
 
@@ -2008,6 +1923,369 @@ document.getElementsByName("hw6")[5].disabled = true;
 //
 //
 //
+if (localStorage.getItem("THead") == 1) {
+
+switch (localStorage.getItem("DayNo")) {
+   case "1":
+document.getElementsByName("hw")[0].disabled = false;
+document.getElementsByName("hw")[1].disabled = false;
+document.getElementsByName("hw")[2].disabled = false;
+document.getElementsByName("hw")[3].disabled = false;
+document.getElementsByName("hw")[4].disabled = false;
+document.getElementsByName("hw")[5].disabled = false;
+
+document.getElementsByName("hw1")[0].disabled = true;
+document.getElementsByName("hw1")[1].disabled = true;
+document.getElementsByName("hw1")[2].disabled = true;
+document.getElementsByName("hw1")[3].disabled = true;
+document.getElementsByName("hw1")[4].disabled = true;
+document.getElementsByName("hw1")[5].disabled = true;
+
+document.getElementsByName("hw2")[0].disabled = true;
+document.getElementsByName("hw2")[1].disabled = true;
+document.getElementsByName("hw2")[2].disabled = true;
+document.getElementsByName("hw2")[3].disabled = true;
+document.getElementsByName("hw2")[4].disabled = true;
+document.getElementsByName("hw2")[5].disabled = true;
+
+document.getElementsByName("hw3")[0].disabled = true;
+document.getElementsByName("hw3")[1].disabled = true;
+document.getElementsByName("hw3")[2].disabled = true;
+document.getElementsByName("hw3")[3].disabled = true;
+document.getElementsByName("hw3")[4].disabled = true;
+document.getElementsByName("hw3")[5].disabled = true;
+
+document.getElementsByName("hw4")[0].disabled = true;
+document.getElementsByName("hw4")[1].disabled = true;
+document.getElementsByName("hw4")[2].disabled = true;
+document.getElementsByName("hw4")[3].disabled = true;
+document.getElementsByName("hw4")[4].disabled = true;
+document.getElementsByName("hw4")[5].disabled = true;
+
+document.getElementsByName("hw5")[0].disabled = true;
+document.getElementsByName("hw5")[1].disabled = true;
+document.getElementsByName("hw5")[2].disabled = true;
+document.getElementsByName("hw5")[3].disabled = true;
+document.getElementsByName("hw5")[4].disabled = true;
+document.getElementsByName("hw5")[5].disabled = true;
+
+document.getElementsByName("hw6")[0].disabled = true;
+document.getElementsByName("hw6")[1].disabled = true;
+document.getElementsByName("hw6")[2].disabled = true;
+document.getElementsByName("hw6")[3].disabled = true;
+document.getElementsByName("hw6")[4].disabled = true;
+document.getElementsByName("hw6")[5].disabled = true;
+
+    break;
+  case "2":
+document.getElementsByName("hw1")[0].disabled = false;
+document.getElementsByName("hw1")[1].disabled = false;
+document.getElementsByName("hw1")[2].disabled = false;
+document.getElementsByName("hw1")[3].disabled = false;
+document.getElementsByName("hw1")[4].disabled = false;
+document.getElementsByName("hw1")[5].disabled = false;
+
+document.getElementsByName("hw")[0].disabled = true;
+document.getElementsByName("hw")[1].disabled = true;
+document.getElementsByName("hw")[2].disabled = true;
+document.getElementsByName("hw")[3].disabled = true;
+document.getElementsByName("hw")[4].disabled = true;
+document.getElementsByName("hw")[5].disabled = true;
+
+document.getElementsByName("hw2")[0].disabled = true;
+document.getElementsByName("hw2")[1].disabled = true;
+document.getElementsByName("hw2")[2].disabled = true;
+document.getElementsByName("hw2")[3].disabled = true;
+document.getElementsByName("hw2")[4].disabled = true;
+document.getElementsByName("hw2")[5].disabled = true;
+
+document.getElementsByName("hw3")[0].disabled = true;
+document.getElementsByName("hw3")[1].disabled = true;
+document.getElementsByName("hw3")[2].disabled = true;
+document.getElementsByName("hw3")[3].disabled = true;
+document.getElementsByName("hw3")[4].disabled = true;
+document.getElementsByName("hw3")[5].disabled = true;
+
+document.getElementsByName("hw4")[0].disabled = true;
+document.getElementsByName("hw4")[1].disabled = true;
+document.getElementsByName("hw4")[2].disabled = true;
+document.getElementsByName("hw4")[3].disabled = true;
+document.getElementsByName("hw4")[4].disabled = true;
+document.getElementsByName("hw4")[5].disabled = true;
+
+document.getElementsByName("hw5")[0].disabled = true;
+document.getElementsByName("hw5")[1].disabled = true;
+document.getElementsByName("hw5")[2].disabled = true;
+document.getElementsByName("hw5")[3].disabled = true;
+document.getElementsByName("hw5")[4].disabled = true;
+document.getElementsByName("hw5")[5].disabled = true;
+
+document.getElementsByName("hw6")[0].disabled = true;
+document.getElementsByName("hw6")[1].disabled = true;
+document.getElementsByName("hw6")[2].disabled = true;
+document.getElementsByName("hw6")[3].disabled = true;
+document.getElementsByName("hw6")[4].disabled = true;
+document.getElementsByName("hw6")[5].disabled = true;
+
+    break;
+  case "3":
+document.getElementsByName("hw2")[0].disabled = false;
+document.getElementsByName("hw2")[1].disabled = false;
+document.getElementsByName("hw2")[2].disabled = false;
+document.getElementsByName("hw2")[3].disabled = false;
+document.getElementsByName("hw2")[4].disabled = false;
+document.getElementsByName("hw2")[5].disabled = false;
+
+document.getElementsByName("hw1")[0].disabled = true;
+document.getElementsByName("hw1")[1].disabled = true;
+document.getElementsByName("hw1")[2].disabled = true;
+document.getElementsByName("hw1")[3].disabled = true;
+document.getElementsByName("hw1")[4].disabled = true;
+document.getElementsByName("hw1")[5].disabled = true;
+
+document.getElementsByName("hw")[0].disabled = true;
+document.getElementsByName("hw")[1].disabled = true;
+document.getElementsByName("hw")[2].disabled = true;
+document.getElementsByName("hw")[3].disabled = true;
+document.getElementsByName("hw")[4].disabled = true;
+document.getElementsByName("hw")[5].disabled = true;
+
+document.getElementsByName("hw3")[0].disabled = true;
+document.getElementsByName("hw3")[1].disabled = true;
+document.getElementsByName("hw3")[2].disabled = true;
+document.getElementsByName("hw3")[3].disabled = true;
+document.getElementsByName("hw3")[4].disabled = true;
+document.getElementsByName("hw3")[5].disabled = true;
+
+document.getElementsByName("hw4")[0].disabled = true;
+document.getElementsByName("hw4")[1].disabled = true;
+document.getElementsByName("hw4")[2].disabled = true;
+document.getElementsByName("hw4")[3].disabled = true;
+document.getElementsByName("hw4")[4].disabled = true;
+document.getElementsByName("hw4")[5].disabled = true;
+
+document.getElementsByName("hw5")[0].disabled = true;
+document.getElementsByName("hw5")[1].disabled = true;
+document.getElementsByName("hw5")[2].disabled = true;
+document.getElementsByName("hw5")[3].disabled = true;
+document.getElementsByName("hw5")[4].disabled = true;
+document.getElementsByName("hw5")[5].disabled = true;
+
+document.getElementsByName("hw6")[0].disabled = true;
+document.getElementsByName("hw6")[1].disabled = true;
+document.getElementsByName("hw6")[2].disabled = true;
+document.getElementsByName("hw6")[3].disabled = true;
+document.getElementsByName("hw6")[4].disabled = true;
+document.getElementsByName("hw6")[5].disabled = true;
+ 
+    break;
+  case "4":
+document.getElementsByName("hw3")[0].disabled = false;
+document.getElementsByName("hw3")[1].disabled = false;
+document.getElementsByName("hw3")[2].disabled = false;
+document.getElementsByName("hw3")[3].disabled = false;
+document.getElementsByName("hw3")[4].disabled = false;
+document.getElementsByName("hw3")[5].disabled = false;
+
+document.getElementsByName("hw1")[0].disabled = true;
+document.getElementsByName("hw1")[1].disabled = true;
+document.getElementsByName("hw1")[2].disabled = true;
+document.getElementsByName("hw1")[3].disabled = true;
+document.getElementsByName("hw1")[4].disabled = true;
+document.getElementsByName("hw1")[5].disabled = true;
+
+document.getElementsByName("hw2")[0].disabled = true;
+document.getElementsByName("hw2")[1].disabled = true;
+document.getElementsByName("hw2")[2].disabled = true;
+document.getElementsByName("hw2")[3].disabled = true;
+document.getElementsByName("hw2")[4].disabled = true;
+document.getElementsByName("hw2")[5].disabled = true;
+
+document.getElementsByName("hw")[0].disabled = true;
+document.getElementsByName("hw")[1].disabled = true;
+document.getElementsByName("hw")[2].disabled = true;
+document.getElementsByName("hw")[3].disabled = true;
+document.getElementsByName("hw")[4].disabled = true;
+document.getElementsByName("hw")[5].disabled = true;
+
+document.getElementsByName("hw4")[0].disabled = true;
+document.getElementsByName("hw4")[1].disabled = true;
+document.getElementsByName("hw4")[2].disabled = true;
+document.getElementsByName("hw4")[3].disabled = true;
+document.getElementsByName("hw4")[4].disabled = true;
+document.getElementsByName("hw4")[5].disabled = true;
+
+document.getElementsByName("hw5")[0].disabled = true;
+document.getElementsByName("hw5")[1].disabled = true;
+document.getElementsByName("hw5")[2].disabled = true;
+document.getElementsByName("hw5")[3].disabled = true;
+document.getElementsByName("hw5")[4].disabled = true;
+document.getElementsByName("hw5")[5].disabled = true;
+
+document.getElementsByName("hw6")[0].disabled = true;
+document.getElementsByName("hw6")[1].disabled = true;
+document.getElementsByName("hw6")[2].disabled = true;
+document.getElementsByName("hw6")[3].disabled = true;
+document.getElementsByName("hw6")[4].disabled = true;
+document.getElementsByName("hw6")[5].disabled = true;
+
+    break;
+  case "5":
+document.getElementsByName("hw4")[0].disabled = false;
+document.getElementsByName("hw4")[1].disabled = false;
+document.getElementsByName("hw4")[2].disabled = false;
+document.getElementsByName("hw4")[3].disabled = false;
+document.getElementsByName("hw4")[4].disabled = false;
+document.getElementsByName("hw4")[5].disabled = false;
+
+document.getElementsByName("hw1")[0].disabled = true;
+document.getElementsByName("hw1")[1].disabled = true;
+document.getElementsByName("hw1")[2].disabled = true;
+document.getElementsByName("hw1")[3].disabled = true;
+document.getElementsByName("hw1")[4].disabled = true;
+document.getElementsByName("hw1")[5].disabled = true;
+
+document.getElementsByName("hw2")[0].disabled = true;
+document.getElementsByName("hw2")[1].disabled = true;
+document.getElementsByName("hw2")[2].disabled = true;
+document.getElementsByName("hw2")[3].disabled = true;
+document.getElementsByName("hw2")[4].disabled = true;
+document.getElementsByName("hw2")[5].disabled = true;
+
+document.getElementsByName("hw3")[0].disabled = true;
+document.getElementsByName("hw3")[1].disabled = true;
+document.getElementsByName("hw3")[2].disabled = true;
+document.getElementsByName("hw3")[3].disabled = true;
+document.getElementsByName("hw3")[4].disabled = true;
+document.getElementsByName("hw3")[5].disabled = true;
+
+document.getElementsByName("hw")[0].disabled = true;
+document.getElementsByName("hw")[1].disabled = true;
+document.getElementsByName("hw")[2].disabled = true;
+document.getElementsByName("hw")[3].disabled = true;
+document.getElementsByName("hw")[4].disabled = true;
+document.getElementsByName("hw")[5].disabled = true;
+
+document.getElementsByName("hw5")[0].disabled = true;
+document.getElementsByName("hw5")[1].disabled = true;
+document.getElementsByName("hw5")[2].disabled = true;
+document.getElementsByName("hw5")[3].disabled = true;
+document.getElementsByName("hw5")[4].disabled = true;
+document.getElementsByName("hw5")[5].disabled = true;
+
+document.getElementsByName("hw6")[0].disabled = true;
+document.getElementsByName("hw6")[1].disabled = true;
+document.getElementsByName("hw6")[2].disabled = true;
+document.getElementsByName("hw6")[3].disabled = true;
+document.getElementsByName("hw6")[4].disabled = true;
+document.getElementsByName("hw6")[5].disabled = true;
+
+break;
+
+case "6":
+document.getElementsByName("hw5")[0].disabled = false;
+document.getElementsByName("hw5")[1].disabled = false;
+document.getElementsByName("hw5")[2].disabled = false;
+document.getElementsByName("hw5")[3].disabled = false;
+document.getElementsByName("hw5")[4].disabled = false;
+document.getElementsByName("hw5")[5].disabled = false;
+
+document.getElementsByName("hw1")[0].disabled = true;
+document.getElementsByName("hw1")[1].disabled = true;
+document.getElementsByName("hw1")[2].disabled = true;
+document.getElementsByName("hw1")[3].disabled = true;
+document.getElementsByName("hw1")[4].disabled = true;
+document.getElementsByName("hw1")[5].disabled = true;
+
+document.getElementsByName("hw2")[0].disabled = true;
+document.getElementsByName("hw2")[1].disabled = true;
+document.getElementsByName("hw2")[2].disabled = true;
+document.getElementsByName("hw2")[3].disabled = true;
+document.getElementsByName("hw2")[4].disabled = true;
+document.getElementsByName("hw2")[5].disabled = true;
+
+document.getElementsByName("hw3")[0].disabled = true;
+document.getElementsByName("hw3")[1].disabled = true;
+document.getElementsByName("hw3")[2].disabled = true;
+document.getElementsByName("hw3")[3].disabled = true;
+document.getElementsByName("hw3")[4].disabled = true;
+document.getElementsByName("hw3")[5].disabled = true;
+
+document.getElementsByName("hw4")[0].disabled = true;
+document.getElementsByName("hw4")[1].disabled = true;
+document.getElementsByName("hw4")[2].disabled = true;
+document.getElementsByName("hw4")[3].disabled = true;
+document.getElementsByName("hw4")[4].disabled = true;
+document.getElementsByName("hw4")[5].disabled = true;
+
+document.getElementsByName("hw")[0].disabled = true;
+document.getElementsByName("hw")[1].disabled = true;
+document.getElementsByName("hw")[2].disabled = true;
+document.getElementsByName("hw")[3].disabled = true;
+document.getElementsByName("hw")[4].disabled = true;
+document.getElementsByName("hw")[5].disabled = true;
+
+document.getElementsByName("hw6")[0].disabled = true;
+document.getElementsByName("hw6")[1].disabled = true;
+document.getElementsByName("hw6")[2].disabled = true;
+document.getElementsByName("hw6")[3].disabled = true;
+document.getElementsByName("hw6")[4].disabled = true;
+document.getElementsByName("hw6")[5].disabled = true;
+
+    break;
+
+case "7":
+document.getElementsByName("hw6")[0].disabled = false;
+document.getElementsByName("hw6")[1].disabled = false;
+document.getElementsByName("hw6")[2].disabled = false;
+document.getElementsByName("hw6")[3].disabled = false;
+document.getElementsByName("hw6")[4].disabled = false;
+document.getElementsByName("hw6")[5].disabled = false;
+
+document.getElementsByName("hw1")[0].disabled = true;
+document.getElementsByName("hw1")[1].disabled = true;
+document.getElementsByName("hw1")[2].disabled = true;
+document.getElementsByName("hw1")[3].disabled = true;
+document.getElementsByName("hw1")[4].disabled = true;
+document.getElementsByName("hw1")[5].disabled = true;
+
+document.getElementsByName("hw2")[0].disabled = true;
+document.getElementsByName("hw2")[1].disabled = true;
+document.getElementsByName("hw2")[2].disabled = true;
+document.getElementsByName("hw2")[3].disabled = true;
+document.getElementsByName("hw2")[4].disabled = true;
+document.getElementsByName("hw2")[5].disabled = true;
+
+document.getElementsByName("hw3")[0].disabled = true;
+document.getElementsByName("hw3")[1].disabled = true;
+document.getElementsByName("hw3")[2].disabled = true;
+document.getElementsByName("hw3")[3].disabled = true;
+document.getElementsByName("hw3")[4].disabled = true;
+document.getElementsByName("hw3")[5].disabled = true;
+
+document.getElementsByName("hw4")[0].disabled = true;
+document.getElementsByName("hw4")[1].disabled = true;
+document.getElementsByName("hw4")[2].disabled = true;
+document.getElementsByName("hw4")[3].disabled = true;
+document.getElementsByName("hw4")[4].disabled = true;
+document.getElementsByName("hw4")[5].disabled = true;
+
+document.getElementsByName("hw5")[0].disabled = true;
+document.getElementsByName("hw5")[1].disabled = true;
+document.getElementsByName("hw5")[2].disabled = true;
+document.getElementsByName("hw5")[3].disabled = true;
+document.getElementsByName("hw5")[4].disabled = true;
+document.getElementsByName("hw5")[5].disabled = true;
+
+document.getElementsByName("hw")[0].disabled = true;
+document.getElementsByName("hw")[1].disabled = true;
+document.getElementsByName("hw")[2].disabled = true;
+document.getElementsByName("hw")[3].disabled = true;
+document.getElementsByName("hw")[4].disabled = true;
+document.getElementsByName("hw")[5].disabled = true;
+}
+} else {
+
 switch (new Date().getDay()) {
    case 1:
 document.getElementsByName("hw")[0].disabled = false;
@@ -2016,6 +2294,49 @@ document.getElementsByName("hw")[2].disabled = false;
 document.getElementsByName("hw")[3].disabled = false;
 document.getElementsByName("hw")[4].disabled = false;
 document.getElementsByName("hw")[5].disabled = false;
+
+document.getElementsByName("hw1")[0].disabled = true;
+document.getElementsByName("hw1")[1].disabled = true;
+document.getElementsByName("hw1")[2].disabled = true;
+document.getElementsByName("hw1")[3].disabled = true;
+document.getElementsByName("hw1")[4].disabled = true;
+document.getElementsByName("hw1")[5].disabled = true;
+
+document.getElementsByName("hw2")[0].disabled = true;
+document.getElementsByName("hw2")[1].disabled = true;
+document.getElementsByName("hw2")[2].disabled = true;
+document.getElementsByName("hw2")[3].disabled = true;
+document.getElementsByName("hw2")[4].disabled = true;
+document.getElementsByName("hw2")[5].disabled = true;
+
+document.getElementsByName("hw3")[0].disabled = true;
+document.getElementsByName("hw3")[1].disabled = true;
+document.getElementsByName("hw3")[2].disabled = true;
+document.getElementsByName("hw3")[3].disabled = true;
+document.getElementsByName("hw3")[4].disabled = true;
+document.getElementsByName("hw3")[5].disabled = true;
+
+document.getElementsByName("hw4")[0].disabled = true;
+document.getElementsByName("hw4")[1].disabled = true;
+document.getElementsByName("hw4")[2].disabled = true;
+document.getElementsByName("hw4")[3].disabled = true;
+document.getElementsByName("hw4")[4].disabled = true;
+document.getElementsByName("hw4")[5].disabled = true;
+
+document.getElementsByName("hw5")[0].disabled = true;
+document.getElementsByName("hw5")[1].disabled = true;
+document.getElementsByName("hw5")[2].disabled = true;
+document.getElementsByName("hw5")[3].disabled = true;
+document.getElementsByName("hw5")[4].disabled = true;
+document.getElementsByName("hw5")[5].disabled = true;
+
+document.getElementsByName("hw6")[0].disabled = true;
+document.getElementsByName("hw6")[1].disabled = true;
+document.getElementsByName("hw6")[2].disabled = true;
+document.getElementsByName("hw6")[3].disabled = true;
+document.getElementsByName("hw6")[4].disabled = true;
+document.getElementsByName("hw6")[5].disabled = true;
+
     break;
   case 2:
 document.getElementsByName("hw1")[0].disabled = false;
@@ -2024,6 +2345,49 @@ document.getElementsByName("hw1")[2].disabled = false;
 document.getElementsByName("hw1")[3].disabled = false;
 document.getElementsByName("hw1")[4].disabled = false;
 document.getElementsByName("hw1")[5].disabled = false;
+
+document.getElementsByName("hw")[0].disabled = true;
+document.getElementsByName("hw")[1].disabled = true;
+document.getElementsByName("hw")[2].disabled = true;
+document.getElementsByName("hw")[3].disabled = true;
+document.getElementsByName("hw")[4].disabled = true;
+document.getElementsByName("hw")[5].disabled = true;
+
+document.getElementsByName("hw2")[0].disabled = true;
+document.getElementsByName("hw2")[1].disabled = true;
+document.getElementsByName("hw2")[2].disabled = true;
+document.getElementsByName("hw2")[3].disabled = true;
+document.getElementsByName("hw2")[4].disabled = true;
+document.getElementsByName("hw2")[5].disabled = true;
+
+document.getElementsByName("hw3")[0].disabled = true;
+document.getElementsByName("hw3")[1].disabled = true;
+document.getElementsByName("hw3")[2].disabled = true;
+document.getElementsByName("hw3")[3].disabled = true;
+document.getElementsByName("hw3")[4].disabled = true;
+document.getElementsByName("hw3")[5].disabled = true;
+
+document.getElementsByName("hw4")[0].disabled = true;
+document.getElementsByName("hw4")[1].disabled = true;
+document.getElementsByName("hw4")[2].disabled = true;
+document.getElementsByName("hw4")[3].disabled = true;
+document.getElementsByName("hw4")[4].disabled = true;
+document.getElementsByName("hw4")[5].disabled = true;
+
+document.getElementsByName("hw5")[0].disabled = true;
+document.getElementsByName("hw5")[1].disabled = true;
+document.getElementsByName("hw5")[2].disabled = true;
+document.getElementsByName("hw5")[3].disabled = true;
+document.getElementsByName("hw5")[4].disabled = true;
+document.getElementsByName("hw5")[5].disabled = true;
+
+document.getElementsByName("hw6")[0].disabled = true;
+document.getElementsByName("hw6")[1].disabled = true;
+document.getElementsByName("hw6")[2].disabled = true;
+document.getElementsByName("hw6")[3].disabled = true;
+document.getElementsByName("hw6")[4].disabled = true;
+document.getElementsByName("hw6")[5].disabled = true;
+
     break;
   case 3:
 document.getElementsByName("hw2")[0].disabled = false;
@@ -2032,6 +2396,49 @@ document.getElementsByName("hw2")[2].disabled = false;
 document.getElementsByName("hw2")[3].disabled = false;
 document.getElementsByName("hw2")[4].disabled = false;
 document.getElementsByName("hw2")[5].disabled = false;
+
+document.getElementsByName("hw1")[0].disabled = true;
+document.getElementsByName("hw1")[1].disabled = true;
+document.getElementsByName("hw1")[2].disabled = true;
+document.getElementsByName("hw1")[3].disabled = true;
+document.getElementsByName("hw1")[4].disabled = true;
+document.getElementsByName("hw1")[5].disabled = true;
+
+document.getElementsByName("hw")[0].disabled = true;
+document.getElementsByName("hw")[1].disabled = true;
+document.getElementsByName("hw")[2].disabled = true;
+document.getElementsByName("hw")[3].disabled = true;
+document.getElementsByName("hw")[4].disabled = true;
+document.getElementsByName("hw")[5].disabled = true;
+
+document.getElementsByName("hw3")[0].disabled = true;
+document.getElementsByName("hw3")[1].disabled = true;
+document.getElementsByName("hw3")[2].disabled = true;
+document.getElementsByName("hw3")[3].disabled = true;
+document.getElementsByName("hw3")[4].disabled = true;
+document.getElementsByName("hw3")[5].disabled = true;
+
+document.getElementsByName("hw4")[0].disabled = true;
+document.getElementsByName("hw4")[1].disabled = true;
+document.getElementsByName("hw4")[2].disabled = true;
+document.getElementsByName("hw4")[3].disabled = true;
+document.getElementsByName("hw4")[4].disabled = true;
+document.getElementsByName("hw4")[5].disabled = true;
+
+document.getElementsByName("hw5")[0].disabled = true;
+document.getElementsByName("hw5")[1].disabled = true;
+document.getElementsByName("hw5")[2].disabled = true;
+document.getElementsByName("hw5")[3].disabled = true;
+document.getElementsByName("hw5")[4].disabled = true;
+document.getElementsByName("hw5")[5].disabled = true;
+
+document.getElementsByName("hw6")[0].disabled = true;
+document.getElementsByName("hw6")[1].disabled = true;
+document.getElementsByName("hw6")[2].disabled = true;
+document.getElementsByName("hw6")[3].disabled = true;
+document.getElementsByName("hw6")[4].disabled = true;
+document.getElementsByName("hw6")[5].disabled = true;
+
     break;
   case 4:
 document.getElementsByName("hw3")[0].disabled = false;
@@ -2040,6 +2447,49 @@ document.getElementsByName("hw3")[2].disabled = false;
 document.getElementsByName("hw3")[3].disabled = false;
 document.getElementsByName("hw3")[4].disabled = false;
 document.getElementsByName("hw3")[5].disabled = false;
+
+document.getElementsByName("hw1")[0].disabled = true;
+document.getElementsByName("hw1")[1].disabled = true;
+document.getElementsByName("hw1")[2].disabled = true;
+document.getElementsByName("hw1")[3].disabled = true;
+document.getElementsByName("hw1")[4].disabled = true;
+document.getElementsByName("hw1")[5].disabled = true;
+
+document.getElementsByName("hw2")[0].disabled = true;
+document.getElementsByName("hw2")[1].disabled = true;
+document.getElementsByName("hw2")[2].disabled = true;
+document.getElementsByName("hw2")[3].disabled = true;
+document.getElementsByName("hw2")[4].disabled = true;
+document.getElementsByName("hw2")[5].disabled = true;
+
+document.getElementsByName("hw")[0].disabled = true;
+document.getElementsByName("hw")[1].disabled = true;
+document.getElementsByName("hw")[2].disabled = true;
+document.getElementsByName("hw")[3].disabled = true;
+document.getElementsByName("hw")[4].disabled = true;
+document.getElementsByName("hw")[5].disabled = true;
+
+document.getElementsByName("hw4")[0].disabled = true;
+document.getElementsByName("hw4")[1].disabled = true;
+document.getElementsByName("hw4")[2].disabled = true;
+document.getElementsByName("hw4")[3].disabled = true;
+document.getElementsByName("hw4")[4].disabled = true;
+document.getElementsByName("hw4")[5].disabled = true;
+
+document.getElementsByName("hw5")[0].disabled = true;
+document.getElementsByName("hw5")[1].disabled = true;
+document.getElementsByName("hw5")[2].disabled = true;
+document.getElementsByName("hw5")[3].disabled = true;
+document.getElementsByName("hw5")[4].disabled = true;
+document.getElementsByName("hw5")[5].disabled = true;
+
+document.getElementsByName("hw6")[0].disabled = true;
+document.getElementsByName("hw6")[1].disabled = true;
+document.getElementsByName("hw6")[2].disabled = true;
+document.getElementsByName("hw6")[3].disabled = true;
+document.getElementsByName("hw6")[4].disabled = true;
+document.getElementsByName("hw6")[5].disabled = true;
+
     break;
   case 5:
 document.getElementsByName("hw4")[0].disabled = false;
@@ -2048,6 +2498,49 @@ document.getElementsByName("hw4")[2].disabled = false;
 document.getElementsByName("hw4")[3].disabled = false;
 document.getElementsByName("hw4")[4].disabled = false;
 document.getElementsByName("hw4")[5].disabled = false;
+
+document.getElementsByName("hw1")[0].disabled = true;
+document.getElementsByName("hw1")[1].disabled = true;
+document.getElementsByName("hw1")[2].disabled = true;
+document.getElementsByName("hw1")[3].disabled = true;
+document.getElementsByName("hw1")[4].disabled = true;
+document.getElementsByName("hw1")[5].disabled = true;
+
+document.getElementsByName("hw2")[0].disabled = true;
+document.getElementsByName("hw2")[1].disabled = true;
+document.getElementsByName("hw2")[2].disabled = true;
+document.getElementsByName("hw2")[3].disabled = true;
+document.getElementsByName("hw2")[4].disabled = true;
+document.getElementsByName("hw2")[5].disabled = true;
+
+document.getElementsByName("hw3")[0].disabled = true;
+document.getElementsByName("hw3")[1].disabled = true;
+document.getElementsByName("hw3")[2].disabled = true;
+document.getElementsByName("hw3")[3].disabled = true;
+document.getElementsByName("hw3")[4].disabled = true;
+document.getElementsByName("hw3")[5].disabled = true;
+
+document.getElementsByName("hw")[0].disabled = true;
+document.getElementsByName("hw")[1].disabled = true;
+document.getElementsByName("hw")[2].disabled = true;
+document.getElementsByName("hw")[3].disabled = true;
+document.getElementsByName("hw")[4].disabled = true;
+document.getElementsByName("hw")[5].disabled = true;
+
+document.getElementsByName("hw5")[0].disabled = true;
+document.getElementsByName("hw5")[1].disabled = true;
+document.getElementsByName("hw5")[2].disabled = true;
+document.getElementsByName("hw5")[3].disabled = true;
+document.getElementsByName("hw5")[4].disabled = true;
+document.getElementsByName("hw5")[5].disabled = true;
+
+document.getElementsByName("hw6")[0].disabled = true;
+document.getElementsByName("hw6")[1].disabled = true;
+document.getElementsByName("hw6")[2].disabled = true;
+document.getElementsByName("hw6")[3].disabled = true;
+document.getElementsByName("hw6")[4].disabled = true;
+document.getElementsByName("hw6")[5].disabled = true;
+
 break;
 
 case 6:
@@ -2057,6 +2550,49 @@ document.getElementsByName("hw5")[2].disabled = false;
 document.getElementsByName("hw5")[3].disabled = false;
 document.getElementsByName("hw5")[4].disabled = false;
 document.getElementsByName("hw5")[5].disabled = false;
+
+document.getElementsByName("hw1")[0].disabled = true;
+document.getElementsByName("hw1")[1].disabled = true;
+document.getElementsByName("hw1")[2].disabled = true;
+document.getElementsByName("hw1")[3].disabled = true;
+document.getElementsByName("hw1")[4].disabled = true;
+document.getElementsByName("hw1")[5].disabled = true;
+
+document.getElementsByName("hw2")[0].disabled = true;
+document.getElementsByName("hw2")[1].disabled = true;
+document.getElementsByName("hw2")[2].disabled = true;
+document.getElementsByName("hw2")[3].disabled = true;
+document.getElementsByName("hw2")[4].disabled = true;
+document.getElementsByName("hw2")[5].disabled = true;
+
+document.getElementsByName("hw3")[0].disabled = true;
+document.getElementsByName("hw3")[1].disabled = true;
+document.getElementsByName("hw3")[2].disabled = true;
+document.getElementsByName("hw3")[3].disabled = true;
+document.getElementsByName("hw3")[4].disabled = true;
+document.getElementsByName("hw3")[5].disabled = true;
+
+document.getElementsByName("hw4")[0].disabled = true;
+document.getElementsByName("hw4")[1].disabled = true;
+document.getElementsByName("hw4")[2].disabled = true;
+document.getElementsByName("hw4")[3].disabled = true;
+document.getElementsByName("hw4")[4].disabled = true;
+document.getElementsByName("hw4")[5].disabled = true;
+
+document.getElementsByName("hw")[0].disabled = true;
+document.getElementsByName("hw")[1].disabled = true;
+document.getElementsByName("hw")[2].disabled = true;
+document.getElementsByName("hw")[3].disabled = true;
+document.getElementsByName("hw")[4].disabled = true;
+document.getElementsByName("hw")[5].disabled = true;
+
+document.getElementsByName("hw6")[0].disabled = true;
+document.getElementsByName("hw6")[1].disabled = true;
+document.getElementsByName("hw6")[2].disabled = true;
+document.getElementsByName("hw6")[3].disabled = true;
+document.getElementsByName("hw6")[4].disabled = true;
+document.getElementsByName("hw6")[5].disabled = true;
+
     break;
 
 case 0:
@@ -2066,6 +2602,49 @@ document.getElementsByName("hw6")[2].disabled = false;
 document.getElementsByName("hw6")[3].disabled = false;
 document.getElementsByName("hw6")[4].disabled = false;
 document.getElementsByName("hw6")[5].disabled = false;
+
+document.getElementsByName("hw1")[0].disabled = true;
+document.getElementsByName("hw1")[1].disabled = true;
+document.getElementsByName("hw1")[2].disabled = true;
+document.getElementsByName("hw1")[3].disabled = true;
+document.getElementsByName("hw1")[4].disabled = true;
+document.getElementsByName("hw1")[5].disabled = true;
+
+document.getElementsByName("hw2")[0].disabled = true;
+document.getElementsByName("hw2")[1].disabled = true;
+document.getElementsByName("hw2")[2].disabled = true;
+document.getElementsByName("hw2")[3].disabled = true;
+document.getElementsByName("hw2")[4].disabled = true;
+document.getElementsByName("hw2")[5].disabled = true;
+
+document.getElementsByName("hw3")[0].disabled = true;
+document.getElementsByName("hw3")[1].disabled = true;
+document.getElementsByName("hw3")[2].disabled = true;
+document.getElementsByName("hw3")[3].disabled = true;
+document.getElementsByName("hw3")[4].disabled = true;
+document.getElementsByName("hw3")[5].disabled = true;
+
+document.getElementsByName("hw4")[0].disabled = true;
+document.getElementsByName("hw4")[1].disabled = true;
+document.getElementsByName("hw4")[2].disabled = true;
+document.getElementsByName("hw4")[3].disabled = true;
+document.getElementsByName("hw4")[4].disabled = true;
+document.getElementsByName("hw4")[5].disabled = true;
+
+document.getElementsByName("hw5")[0].disabled = true;
+document.getElementsByName("hw5")[1].disabled = true;
+document.getElementsByName("hw5")[2].disabled = true;
+document.getElementsByName("hw5")[3].disabled = true;
+document.getElementsByName("hw5")[4].disabled = true;
+document.getElementsByName("hw5")[5].disabled = true;
+
+document.getElementsByName("hw")[0].disabled = true;
+document.getElementsByName("hw")[1].disabled = true;
+document.getElementsByName("hw")[2].disabled = true;
+document.getElementsByName("hw")[3].disabled = true;
+document.getElementsByName("hw")[4].disabled = true;
+document.getElementsByName("hw")[5].disabled = true;
+}
 }
 } else {
 if (confirm("Do you want to set the Timetable?")) {
