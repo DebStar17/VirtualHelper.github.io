@@ -1109,14 +1109,17 @@ open("https://web.whatsapp.com/")
 <select name="THeads" id="THeads" style="font-size:80%" onchange="Days()">
   <option>Monday, Tuesday...</option>
   <option>Day 1, Day 2...</option>
-</select></h2>
+</select>
+
+<button name="THeads" style="font-size:80%" onclick = "Days()" hidden>Change Day</button>
+</h2>
 
 <script>
 function Days() {
 if (document.getElementById("THeads").value == "Day 1, Day 2...") {
 
 var Day = prompt("Enter today's Day no.(without spaces)", "1");
-
+document.getElementsByName("THeads")[1].hidden = false;
 localStorage.setItem("THead", 1);
 
 document.getElementsByClassName("th")[0].innerHTML = "Day 1";
@@ -1490,6 +1493,7 @@ document.getElementsByName("hw")[5].disabled = true;
 } else {
 
 localStorage.setItem("THead", 0);
+document.getElementsByName("THeads")[1].hidden = true;
 
 document.getElementsByClassName("th")[0].innerHTML = "Monday";
 document.getElementsByClassName("th")[1].innerHTML = "Tuesday";
