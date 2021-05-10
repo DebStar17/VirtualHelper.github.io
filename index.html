@@ -889,6 +889,7 @@ document.getElementsByName("hw")[5].disabled = true;
 
 }
 }
+alert("<b>YOUR NOTES</b><br>" + localStorage.getItem("Note"));
 };
 </script>
 
@@ -3662,7 +3663,6 @@ document.getElementById("Home").hidden = true;
 <script>
 function notes() {
 localStorage.setItem("Note", document.getElementsByName("note")[0].value);
-localStorage.setItem("1c", document.getElementsByName("hw")[0].value);
 }
 </script>
 
